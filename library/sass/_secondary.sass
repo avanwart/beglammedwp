@@ -1,0 +1,401 @@
+.bar
+	transition: all .5s ease-in-out
+	top: 0
+	&.affix
+		top: 60px
+		transition: all .5s ease-in-out
+.main-content
+	.card
+		input[type="submit"]
+			display: block
+			width: 100%
+			background: $red
+			border: 1px solid darken($red, 10%)
+			color: white
+			font-family: 'Open Sans', sans-serif
+			font-size: 16px
+			padding: 16px 40px
+			line-height: 1
+			height: auto
+			&:hover
+				background: darken($red, 10%)
+		hr
+			display: inline-block
+			width: 30%
+			margin: 40px 0
+		header
+			background-size: cover
+			background-position: 50% 50%
+			height: 260px
+			text-align: center
+			z-index: 1
+			position: relative
+			.overlay
+				height: 260px
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				text-align: center
+				background: rgba(0, 0, 0, .5)
+				z-index: 2
+				h1
+					font-size: 44px
+					color: white
+					line-height: 260px
+					border: none
+					text-shadow: 0 1px 0 rgba(0, 0, 0, .3)
+		article, .inner
+			padding: 40px
+			h3
+				font-size: 20px
+				font-weight: bold
+				margin-top: 40px
+				margin-bottom: 15px
+				padding-bottom: 5px
+				border-bottom: 1px solid $ash
+
+// About Pages
+.about
+	.well
+		padding-top: 0
+		background: transparent
+		border: none
+		box-shadow: none
+		h3
+			margin: 0 0 20px
+		ul
+			li
+				margin-bottom: 10px
+	form
+		.form-group
+			margin-bottom: 20px
+		input, select
+			border-radius: 2px
+			height: 38px
+			font-size: 16px
+		select
+			padding-left: 15px
+		textarea
+			min-height: 150px
+		.btn
+			display: block
+			width: 100%
+			background: $red
+			border: 1px solid darken($red, 10%)
+			color: white
+			font-family: 'Open Sans', sans-serif
+			font-size: 16px
+			padding: 16px 40px
+			line-height: 1
+			height: auto
+			&:hover
+				background: darken($red, 10%)
+		select.active
+			color: #212121
+
+// Leadership Page
+.leadership
+	h2
+		margin: 0 0 30px
+	.card
+		.person
+			text-align: center
+			min-height: 240px
+		.headshot
+			border: none
+			border-radius: 50%
+			padding: 5px
+			clear: both
+			margin-bottom: 10px
+			width: 125px
+			height: auto
+			display: inline-block
+		p
+			text-align: center
+			small
+				display: block
+		.linkedin
+			text-align: right
+			font-size: 14px
+			margin-bottom: 0
+			.btn-default
+				font-size: 12px
+				border: 1px solid #dadada
+				background-image: linear-gradient(white, $ash)
+				&:hover
+					background: $ash
+			img
+				width: 14px
+				height: 14px
+				display: inline-block
+				vertical-align: middle
+				margin-right: 2px
+				margin-bottom: 2px
+		hr
+			display: inline-block
+			width: 30%
+			margin: 40px 0
+		.modal-dialog
+			width: 800px
+			p, h2
+				text-align: left
+				&.linkedin
+					text-align: center
+			.portrait
+				display: inline-block
+				//width: 250px
+				height: auto
+				margin-bottom: 20px
+
+.press-hits
+	.card
+		article
+			padding: 20px 20px 20px 40px
+			margin-bottom: 20px
+			border-bottom: 1px solid #efefef
+			&:last-child
+				border: none
+			h2
+				font-size: 24px
+				line-height: 1.4
+				margin: 0
+			small
+				display: block
+				text-align: left
+				margin: 0 0 10px
+				font-size: 14px
+			table
+				border: none
+				td
+					border: none
+			.logo
+				background-size: 100px auto
+				background-repeat: no-repeat
+				background-position: center center
+				// height: 100px
+
+.customers
+	.card
+		article
+			h2
+				font-size: 18px
+				margin-bottom: 10px
+
+.testimonials
+	.card
+		article
+			border-bottom: 1px solid #efefef
+			blockquote
+				border: none
+				font-style: italic
+				line-height: 1.7
+			img
+				margin-bottom: 15px
+				display: inline-block
+				width: 150px
+				height: auto
+
+.careers
+	h2
+		margin-bottom: 30px
+	.panel-group
+		.panel
+			box-shadow: none
+			.btn-primary
+				padding: 13px 28px 14px
+				font-size: 15px
+				margin-top: 20px
+
+.contact
+	.main-content
+		.well
+			background: #efefef
+			border-radius: 0
+			padding: 20px
+			hr
+				width: 100%
+				display: block
+				margin: 20px 0
+				border-color: #dadada
+		address
+			span
+				display: block
+				margin-bottom: 8px
+		.google-map
+			position: relative
+			padding-bottom: 75%
+			height: 0
+			overflow: hidden
+			margin-bottom: 20px
+			iframe
+				background: white
+				padding: 6px
+				position: absolute
+				border: 1px solid #ddd!important
+				top: 0
+				left: 0
+				width: 100% !important
+				height: 100% !important
+
+.signup
+	background: #efefef url('../images/motif.gif') right center no-repeat
+	background-size: 560px auto
+	.card
+		width: 450px
+		padding: 30px 40px
+		display: inline-block
+		h1
+			font-size: 28px
+			margin: 10px 0 40px
+		.form-group
+			label
+				display: block
+				text-align: left
+			input
+				width: 100%
+		.frm_submit
+			margin: 0
+	&.enterprise
+		.card
+			h1
+				margin-bottom: 10px
+			p
+				font-size: 13px
+
+
+.product
+	h2
+		font-size: 38px
+		margin-bottom: 30px
+	ul
+		margin: 0 0 30px 20px
+		padding: 0
+		li
+			margin-bottom: 12px
+	.btn-primary
+		font-size: 16px
+	.hero
+		background: #212121 url('../images/hospital-bg.jpg') center bottom no-repeat
+		background-size: cover
+		color: white
+		text-align: center
+		h1
+			font-size: 50px
+		h2
+			font-size: 24px
+			margin: 0 0 40px
+		ul
+			list-style-type: none
+			display: inline-block
+			margin-bottom: 40px
+			li
+				font-size: 20px
+				text-align: left
+				margin-bottom: 10px
+				i
+					font-size: .85em
+					top: 0
+					margin-right: 6px
+	.app
+		background: transparent
+		padding: 5em 0
+	.providers
+		padding: 5em 0
+		background: white url('../images/motif-medium.jpg') 87% 50% no-repeat
+		background-size: auto 280px
+	.patients
+		padding: 5em 0
+		background: transparent
+		img
+			width: 320px
+
+.pricing
+	section
+		ul
+			li
+				margin-bottom: 10px
+	.hero
+		background: #212121 url('../images/rowers.jpg') center bottom no-repeat
+		background-size: cover
+		color: white
+		padding: 5em 0
+		h1
+			font-size: 50px
+		h2
+			margin-bottom: 30px
+	.plans
+		h2
+			font-size: 38px
+			text-align: center
+		.intro
+			font-size: 20px
+			text-align: center
+		.card
+			background: #f6f6f6
+			border: 1px solid #eaeaea
+			border-bottom: 2px solid #e0e0e0
+			padding: 30px
+			text-align: center
+			position: relative
+			margin-bottom: 2em
+			.save
+				width: 56px
+				height: 56px
+				border-radius: 50%
+				position: absolute
+				display: block
+				line-height: 1.3
+				background: $blue
+				color: white
+				top: -20px
+				right: -20px
+				text-align: center
+				padding-top: 12px
+				z-index: 10
+				font-size: 12px
+			h2
+				margin: 20px 0
+				font-size: 32px
+			h3
+				margin-bottom: 60px
+				font-size: 18px
+			.btn
+				width: 100%
+				max-width: 100%
+				padding: 10px 0
+				font-size: 14px
+	.app
+		background: transparent
+		padding: 5em 0
+		h2
+			margin-bottom: 30px
+			text-align: left
+	.providers
+		padding: 5em 0
+		background: white url('../images/motif-medium.jpg') 87% 50% no-repeat
+		background-size: auto 280px
+		h2
+			margin-bottom: 30px
+	.patients
+		padding: 5em 0
+		background: transparent
+		h2
+			margin-bottom: 30px
+		img
+			width: 320px
+
+.thank-you
+	.card
+		article
+			padding: 40px
+
+.sumome-popup-form
+	padding: 2em!important
+	h2
+		font-size: 22px!important
+	.sumome-popup-text
+		text-align: center!important
+		font-size: 14px!important
+	.sumome-popup-powered-variant
+		display: none!important

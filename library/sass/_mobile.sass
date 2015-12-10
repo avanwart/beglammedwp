@@ -1,0 +1,383 @@
+@media screen and (max-width: 767px)
+	.navbar
+		.navbar-header
+			.navbar-brand
+				background-size: auto 38px
+				background-position: center center
+				padding: 0
+				margin-top: 8px
+				width: 200px
+				height: 40px
+		.navbar-toggle
+			margin: 5px 5px 0 0
+			border: none
+			&:hover
+				background: transparent
+				.icon-bar
+					background: $blue
+				.text
+					color: $blue
+			.icon-bar
+				background: $red
+				border-radius: 1px
+				height: 3px
+				width: 26px
+			.text
+				font-size: 9px
+				color: $red
+				text-transform: uppercase
+		.navbar-collapse
+			.navbar-nav
+				margin-top: 10px
+				&.utility
+					position: relative
+					right: auto
+					top: auto
+					li
+						width: 33%
+						margin-bottom: 15px
+						a
+							font-size: 14px
+							&:hover
+								text-decoration: none
+								color: $blue
+				li
+					float: left
+					width: 50%
+					text-align: center
+					&.phone
+						// clear: both
+						// float: none
+						// width: 100%
+						// margin-bottom: 10px
+					&:last-child
+						padding-right: 12px
+						a
+							color: $blue
+					a
+						padding: 12px
+						font-size: 15px
+						line-height: 1.2
+	body.home.page
+		.container
+			margin-right: auto!important
+			margin-left: auto!important
+			padding-left: 15px!important
+			padding-right: 15px!important
+		section
+			overflow-x: hidden
+			padding: 3em 0!important
+			h1, h2
+				font-size: 2em
+			.btn-default
+				border: 1px solid #dadada
+		.hero
+			display: block
+			background-position: 78% 0%
+			min-height: 420px
+			padding: 2em 0!important
+			h1
+				font-size: 2.25em
+				margin-top: 0
+			h2
+				font-size: 18px
+		.logos
+			.logo
+				width: 50%
+				&.top
+					margin-bottom: 15px
+				&.bottom
+					margin-top: 15px
+		.features
+			.tabbable
+				margin: 0
+			.nav-tabs
+				list-style-type: disc
+				border: none
+				border-bottom: 1px solid #efefef
+				margin-bottom: 15px
+				li
+					display: block
+					list-style-type: disc
+					margin-bottom: 10px
+					width: 50%
+					a
+						background: transparent
+						text-align: center
+						color: $blue
+						border: none
+						padding: 0
+					&.active
+						a
+							background: transparent
+							font-weight: bold
+							border: none
+							color: $blue
+					&:last-child
+						width: 100%
+			.tab-content
+				.tab-pane
+					padding: 0px
+					background: transparent
+					border: none
+					h3
+						font-size: 18px
+						text-align: left
+						margin-bottom: 10px
+						font-weight: normal
+						line-height: 1.3
+					.btn-lg
+						width: 100%
+						display: block
+						margin-bottom: 10px
+					.btn-default
+						border: 1px solid #dadada
+		.pricing 
+			.card
+				background: none
+				border-bottom: 1px solid #efefef
+				h2
+					margin: 0px 5px 0 0
+					display: inline-block
+					text-align: left
+					font-size: 26px
+					font-weight: normal
+				h3
+					display: inline-block
+					text-align: left
+					margin-bottom: 15px
+					small
+						margin: 0
+				.btn-primary
+					display: block
+					padding: 10px 30px
+					width: 60%
+					margin: 0 auto
+				.save
+					top: -10px
+					right: -10px
+					border: none
+					width: 52px
+					height: 52px
+		.testimonials
+			h1
+				font-size: 24px
+			.testimonial
+				display: none
+				&:first-child
+					display: block
+					blockquote
+						border: none
+			blockquote
+				padding-bottom: 20px
+				border-bottom: 1px solid rgba(0, 0, 0, .05)
+				margin-bottom: 20px
+		.faq
+			h1
+				font-size: 22px
+			p.text-center
+				font-size: 14px
+			.panel-group .panel 
+				border: 1px solid #ccc
+			.panel-group .panel .panel-heading .panel-title a .glyphicon
+				margin-right: 4px
+	.footer
+		span.hidden-xs
+			display: none!important
+		.bucket
+			text-align: center
+			padding-bottom: 20px
+			border-bottom: 1px solid rgba(0, 0, 0, .15)
+			margin-bottom: 20px
+			box-shadow: 0 1px 0 rgba(255, 255, 255, .05)
+			&.badges
+				border: none
+				box-shadow: none
+				margin: 0
+				img
+					margin-top: 0!important
+	body.page, body.single
+		.modal
+			.modal-dialog
+				width: 100%
+				padding: 0
+				.modal-content
+					border: none
+					border-radius: 0
+					.modal-body
+						p
+							font-size: 15px
+		section
+			padding: 0
+			overflow-x: hidden
+			.container
+				padding-left: 0
+				padding-right: 0
+				.card
+					margin-bottom: 0
+					article, .inner
+						padding: 20px 15px
+					header
+						height: 150px
+						.overlay
+							height: 150px
+							h1
+								line-height: 150px
+								font-size: 36px
+					ul.footer-bucket
+						background: #efefef
+						overflow: auto
+						padding: 10px 0
+						li
+							float: left
+							width: 50%
+							text-align: center
+							a
+								padding: 8px 0
+								display: block
+							&:last-child
+								display: none
+			&.about
+				.card
+					border: none
+				&.single
+					background: red
+			&.leadership
+				.card
+					header
+						.overlay
+							h1
+								font-size: 32px
+					.person
+						min-height: 100px
+						height: auto
+						margin-bottom: 40px
+						&:last-child
+							margin-bottom: 0
+					h2
+						font-size: 28px
+			&.testimonials
+				.card
+					article
+						blockquote
+							padding: 0
+			&.faq
+				padding: 30px 0
+				.container
+					padding: 0 15px
+				h1
+					font-size: 28px
+			&.press-hits
+				.card
+					article
+						padding: 0 10px
+						margin-bottom: 5px
+						small 
+							color: #777
+						.logo
+							background-size: 85px auto
+						.table
+							margin-bottom: 5px
+							td.col-sm-9
+								width: 65%!important
+						h2
+							font-size: 16px
+							font-weight: normal
+				&.customers
+					.card
+						article
+							.table
+								td.col-sm-9
+									width: 100%!important
+									h2
+										margin-top: 20px
+										font-weight: normal
+			&.signup
+				.card
+					width: 100%
+					padding: 15px
+					h1
+						font-size: 22px
+		.product
+			.container
+				padding: 0 15px
+			.hero
+				padding: 50px 0
+				h1
+					font-size: 28px
+					margin-bottom: 30px
+				h2
+					font-size: 18px
+					display: none
+				ul
+					margin: 0 0 20px 20px
+					padding: 0
+					list-style-type: disc
+					li
+						i
+							display: none
+						font-size: 16px
+			section
+				&.app, &.providers, &.patients
+					padding: 40px 0
+					background-image: none
+					.btn-primary
+						width: 100%
+					h2
+						font-size: 24px
+						text-align: center
+						margin-bottom: 20px
+					img
+						margin-bottom: 20px
+		.pricing
+			padding: 3em 0
+			.container
+				padding: 0 15px
+			.hero
+				display: none
+			.card
+				background: white
+				border-color: #dadada
+				margin-bottom: 20px!important
+				h2
+					margin: 0px 5px 0 0
+					display: inline-block
+					text-align: left
+					font-size: 26px
+					font-weight: normal
+				h3
+					display: inline-block
+					text-align: left
+					margin-bottom: 15px
+					small
+						margin: 0
+				.btn-primary
+					display: block
+					padding: 10px 30px
+					width: 60%
+					margin: 0 auto
+				.save
+					display: none
+					top: -10px
+					right: -10px
+					border: none
+					width: 52px
+					height: 52px
+
+	body.page-id-508
+		.about
+			.container
+				.card
+					header
+						.overlay
+							h1
+								font-size: 30px
+					form
+						fieldset
+							max-width: 100%
+							padding: 0
+							margin: 0
+							.form-control, label, input[type="submit"]
+								max-width: 290px
+
+
