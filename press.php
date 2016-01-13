@@ -35,6 +35,7 @@ Template Name: Press
 									<?php footer_bucket_1(); ?>
 								</div>
 							</div>
+							<br>
 							<?php if(get_field('press_articles')): ?>
 
 							<?php while(has_sub_field('press_articles')): ?>

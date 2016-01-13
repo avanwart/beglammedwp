@@ -2,8 +2,14 @@
 	transition: all .5s ease-in-out
 	top: 0
 	&.affix
-		top: 60px
+		top: 30px
 		transition: all .5s ease-in-out
+	a
+		color: $black
+		font-weight: 300
+		&:hover
+			text-decoration: none
+
 .main-content
 	.card
 		input[type="submit"]
@@ -37,16 +43,28 @@
 				left: 0
 				right: 0
 				text-align: center
-				background: rgba(0, 0, 0, .5)
+				background: rgba(0, 0, 0, .45)
 				z-index: 2
+				&.custom
+					h1
+						line-height: 1.2
+						margin-top: 60px
+						margin-bottom: 10px
+						font-size: 44px
+					.intro
+						font-size: 22px
+						line-height: 1.4
+						color: white
 				h1
-					font-size: 44px
+					font-size: 60px
+					font-weight: 300
 					color: white
 					line-height: 260px
+					margin: 0
 					border: none
 					text-shadow: 0 1px 0 rgba(0, 0, 0, .3)
 		article, .inner
-			padding: 40px
+			padding: 60px
 			h3
 				font-size: 20px
 				font-weight: bold
@@ -67,11 +85,12 @@
 		ul
 			li
 				margin-bottom: 10px
+				&.menu-item-702
+					display: none
 	form
 		.form-group
 			margin-bottom: 20px
 		input, select
-			border-radius: 2px
 			height: 38px
 			font-size: 16px
 		select
@@ -94,27 +113,107 @@
 		select.active
 			color: #212121
 
+.gift-cards
+
+	form
+		fieldset
+			margin-bottom: 30px
+		.form-group
+			&.price
+				.col-sm-2
+					width: 20%
+				.radio
+					padding: 0
+					label
+						display: inline-block
+						background: white
+						color: $black
+						text-align: center
+						line-height: 55px
+						width: 75px
+						height: 55px
+						border-radius: 3px
+						border: 1px solid #d7d7d7
+						font-size: 18px
+						&:hover, &.active
+							background: $red
+							border-color: $red
+							color: white
+							cursor: pointer
+						input[type="radio"]
+							visibility: hidden
+			label
+				font-size: 14px
+				font-weight: 100
+				font-family: 'montserratlight'
+			.form-control
+				height: 44px
+				border-radius: 3px
+				border: 1px solid #d7d7d7
+				color: $black
+				font-size: 16px
+				&:focus
+					box-shadow: none
+					border-color: #66AFE9
+				&.datepicker
+					background-image: url('../images/calendar-icon.png')
+					background-position: 98% center
+					background-size: 20px 21px
+					background-repeat: no-repeat
+			.cvv
+				input
+					background-image: url('../images/cvv.jpg')
+					background-size: auto 20px
+					background-position: 92% center
+					background-repeat: no-repeat
+			textarea
+				&.form-control
+					height: auto
+		.btn-block
+			font-size: 16px
+			padding: 15px
+			text-transform: uppercase
+
+// FAQ page
+.long-faq
+	background: white url('../images/tall-faq.jpg') right top no-repeat
+	background-size: 1000px 1783px
+
 // Leadership Page
 .leadership
 	h2
 		margin: 0 0 30px
-	.card
-		.person
-			text-align: center
-			min-height: 240px
-		.headshot
+		font-size: 18px
+		font-weight: 400
+		font-family: 'montserratregular'
+		line-height: 1.3
+		small
+			display: block
+			font-size: .75em
+			padding: 10px 0
+			font-weight: 100
+			color: $black
+			font-family: 'montserratlight'
+	.person
+		text-align: center
+		min-height: 240px
+		padding-bottom: 3em
+		border-bottom: 1px solid #efefef
+		margin-bottom: 3em
+		&:last-child
 			border: none
-			border-radius: 50%
-			padding: 5px
-			clear: both
-			margin-bottom: 10px
-			width: 125px
-			height: auto
-			display: inline-block
-		p
-			text-align: center
-			small
-				display: block
+	.headshot
+		border: none
+		border-radius: 50%
+		padding: 0y
+		clear: both
+		margin-bottom: 10px
+		width: 166px
+		height: auto
+		display: inline-block
+		border: 1px solid #dadada
+	p
+		text-align: left
 		.linkedin
 			text-align: right
 			font-size: 14px
@@ -125,41 +224,26 @@
 				background-image: linear-gradient(white, $ash)
 				&:hover
 					background: $ash
-			img
-				width: 14px
-				height: 14px
-				display: inline-block
-				vertical-align: middle
-				margin-right: 2px
-				margin-bottom: 2px
 		hr
 			display: inline-block
 			width: 30%
 			margin: 40px 0
-		.modal-dialog
-			width: 800px
-			p, h2
-				text-align: left
-				&.linkedin
-					text-align: center
-			.portrait
-				display: inline-block
-				//width: 250px
-				height: auto
-				margin-bottom: 20px
 
 .press-hits
 	.card
 		article
-			padding: 20px 20px 20px 40px
+			padding: 10px 20px 10px 40px
 			margin-bottom: 20px
 			border-bottom: 1px solid #efefef
 			&:last-child
 				border: none
+			&:first-child
+				margin-top: 30px
 			h2
-				font-size: 24px
+				font-size: 20px
 				line-height: 1.4
 				margin: 0
+				font-weight: 300
 			small
 				display: block
 				text-align: left
@@ -170,26 +254,57 @@
 				td
 					border: none
 			.logo
-				background-size: 100px auto
+				background-size: 120px auto
 				background-repeat: no-repeat
 				background-position: center center
 				// height: 100px
 
-.customers
+.services
 	.card
+		h2
+			font-weight: bold
+		.intro
+			margin-bottom: 40px
+		hr
+			margin-top: 0px
 		article
-			h2
-				font-size: 18px
+			padding: 0 15px
+			margin-bottom: 60px
+			h3
+				padding: 0
+				margin: 0 0 10px
+				border: none
+				small
+					margin: 0
+			p
 				margin-bottom: 10px
 
 .testimonials
 	.card
 		article
 			border-bottom: 1px solid #efefef
+			padding: 40px
 			blockquote
 				border: none
 				font-style: italic
 				line-height: 1.7
+				span
+					font-size: 60px
+					font-family: Georgia, serif
+					position: absolute
+					margin: -30px 0 0 -40px
+					color: #dadada
+				small
+					display: block
+					text-align: right
+					font-size: 16px
+					font-style: normal
+					font-weight: bold
+					color: $black
+					margin-top: 15px
+					em
+						font-style: normal
+						font-weight: 300
 			img
 				margin-bottom: 15px
 				display: inline-block
@@ -209,15 +324,18 @@
 
 .contact
 	.main-content
+		.card
+			article
+				padding: 30px
 		.well
-			background: #efefef
+			background: #FFF0F2
 			border-radius: 0
 			padding: 20px
 			hr
 				width: 100%
 				display: block
 				margin: 20px 0
-				border-color: #dadada
+				border-color: #F5DBDF
 		address
 			span
 				display: block
@@ -371,15 +489,6 @@
 		h2
 			margin-bottom: 30px
 			text-align: left
-	.providers
-		padding: 5em 0
-		background: white url('../images/motif-medium.jpg') 87% 50% no-repeat
-		background-size: auto 280px
-		h2
-			margin-bottom: 30px
-	.patients
-		padding: 5em 0
-		background: transparent
 		h2
 			margin-bottom: 30px
 		img
@@ -390,12 +499,148 @@
 		article
 			padding: 40px
 
-.sumome-popup-form
-	padding: 2em!important
-	h2
-		font-size: 22px!important
-	.sumome-popup-text
-		text-align: center!important
-		font-size: 14px!important
-	.sumome-popup-powered-variant
-		display: none!important
+// Weddings Page
+.weddings
+	h1
+		color: white
+		font-weight: 100
+		margin-top: 130px
+	.intro
+		font-size: 22px
+		color: white
+		margin-bottom: 60px
+	&.benefits
+		padding: 2em 0
+		h3
+			padding: 0
+			margin-bottom: 10px
+			font-size: 20px
+			font-weight: bold
+		.icon
+			height: 40px
+			width: auto
+	&.look
+		background: white
+		.bucket
+			padding: 40px
+	&.variety
+		p
+			margin-bottom: 50px
+		.bucket
+			padding: 0 20px
+			img
+				height: 310px
+				width: auto
+				display: inline-block
+				&.middle
+					margin-left: -10px
+	&.services
+		background: white
+		padding-bottom: 2em
+		article
+			padding: 0 15px
+			margin-bottom: 60px
+			h3
+				padding: 0
+				margin: 0 0 10px
+				border: none
+				font-weight: bold
+				font-size: 16px
+				small
+					margin: 0
+			p
+				margin-bottom: 10px
+		.bucket
+			min-height: 210px
+	&.faq
+		background: $ash url('../images/wedding-faq.jpg') 50% 50% no-repeat
+		background-size: cover
+
+// Groups
+.groups
+	&.hero
+		height: 360px
+		max-height: 360px
+		min-height: 160px
+		h1
+			margin: 0
+			padding: 0
+			line-height: 360px
+			color: white
+			text-transform: none
+			font-size: 3em
+			font-weight: 100
+	&.form
+		padding-bottom: 4em
+		background: white
+		height: auto
+		max-height: 600px
+		h2
+			font-size: 30px
+			margin-bottom: 0px
+			font-weight: bold
+		.intro
+			font-size: 24px
+			font-weight: 100
+			text-align: center
+			margin-bottom: 30px
+		p
+			margin-bottom: 2em
+
+
+// Membership
+.membership
+	&.hero
+		h1
+			line-height: 420px
+			margin: 0
+			color: white
+			text-transform: none
+			font-size: 50px
+			font-weight: 100
+
+// Explore styles
+.explore
+	background: white
+	h1
+		margin-bottom: 20px
+	.filters
+		list-style-type: none
+		display: inline-block
+		padding: 0
+		margin: 0 0 20px
+		span
+			display: inline-block!important
+		.btn
+			font-size: 13px
+			margin: 0 5px
+			color: #666
+			padding: 6px 20px
+			border: 1px solid darken($ash, 7.5%)
+			-webkit-font-smoothing: antialiased
+			transition: none
+			text-decoration: none
+			&:hover, &.active, &.active:hover
+				box-shadow: none
+				color: white
+				background: $red
+				border-color: $red
+			&:active, &:focus
+				outline: none
+	.card
+		background: none
+		border: none
+		margin: 0 0 40px
+		a
+			text-decoration: underline
+			display: inline-block
+		img
+			max-width: 100%
+			height: auto
+		h2
+			font-size: 22px
+			font-weight: bold
+			margin-bottom: 8px
+		p
+			margin-bottom: 10px
+			font-size: 14px

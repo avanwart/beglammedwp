@@ -17,21 +17,21 @@ Template Name: Home Page
 				<form action="" class="form">
 					<div class="form-group">
 						<div class="input-group">
-							<select name="location" id="location" class="form-control">
+							<select name="location" id="location" class="form-control special">
 								<option value="">Location</option>
 								<option value=""></option>
 								<option value=""></option>
 								<option value=""></option>
 								<option value=""></option>
 							</select>
-							<select name="date" id="date" class="form-control">
+							<select name="date" id="date" class="form-control special">
 								<option value="">Date</option>
 								<option value=""></option>
 								<option value=""></option>
 								<option value=""></option>
 								<option value=""></option>
 							</select>
-							<select name="time" id="time" class="form-control">
+							<select name="time" id="time" class="form-control special">
 								<option value="">Time</option>
 								<option value=""></option>
 								<option value=""></option>
@@ -39,7 +39,7 @@ Template Name: Home Page
 								<option value=""></option>
 							</select>
 							<div class="input-group-btn">
-								<button class="btn btn-primary">Book an Appointment</button>
+								<button class="btn btn-primary btn-block">Book an Appointment</button>
 							</div>
 						</div>
 					</div>
@@ -53,7 +53,8 @@ Template Name: Home Page
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<img src="<?php bloginfo('template_directory'); ?>/library/images/logo-bar-desktop.jpg" alt="Marie Claire logo, People logo, Vanity Fair logo, Nylon logo, Los Angeles Times logo">
+				<img class="hidden-xs" src="<?php bloginfo('template_directory'); ?>/library/images/logo-bar-desktop.jpg" alt="Marie Claire logo, People logo, Vanity Fair logo, Nylon logo, Los Angeles Times logo">
+				<img class="visible-xs img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/logo-bar-desktop.jpg" alt="Marie Claire logo, People logo, Vanity Fair logo, Nylon logo, Los Angeles Times logo">
 			</div>
 		</div>
 	</div>
@@ -63,7 +64,7 @@ Template Name: Home Page
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="push">Beauty for Any Occassion</h2>
+				<h2 class="push">Beauty for Any Occasion</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -71,19 +72,19 @@ Template Name: Home Page
 				<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/individuals-service.jpg" alt="">
 				<h3>Individuals</h3>
 				<p>Full makeup and hair styling in the comfort of your home, office or hotel.</p>
-				<a href="#" class="btn btn-primary">Book Now</a> <a href="#" class="btn btn-default">Learn more</a>
+				<a href="#" class="btn btn-primary">Book Now</a> <a href="?p=7" class="btn btn-default">Learn more</a>
 			</div>
 			<div class="col-sm-4 text-center">
 				<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/groups-service.jpg" alt="">
 				<h3>Groups</h3>
 				<p>Perfect for a night out on the town, corporate events or photo shoots.</p>
-				<a href="#" class="btn btn-primary">Book Now</a> <a href="#" class="btn btn-default">Learn more</a>
+				<a href="#" class="btn btn-primary">Book Now</a> <a href="?p=805" class="btn btn-default">Learn more</a>
 			</div>
 			<div class="col-sm-4 text-center">
 				<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/wedding-service.jpg" alt="">
 				<h3>Weddings</h3>
-				<p>Full service appointments for brides and bridesmaids for weddings, rehearsals, bridal showers and engagements.</p>
-				<a href="#" class="btn btn-primary">Book Now</a> <a href="#" class="btn btn-default">Learn more</a>
+				<p>Full service appointments for weddings, rehearsals, bridal showers and engagements.</p>
+				<a href="#" class="btn btn-primary">Book Now</a> <a href="?p=26" class="btn btn-default">Learn more</a>
 			</div>
 			</div>
 		</div>
@@ -115,7 +116,7 @@ Template Name: Home Page
 		<!-- End of Testimonials dynamic content -->
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<p><a href="?p=488">More testimonials &raquo;</a></p>
+				<p><a href="?p=759">More testimonials &raquo;</a></p>
 			</div>
 		</div>
 		<div class="row">
@@ -164,7 +165,7 @@ Template Name: Home Page
 		<div class="row">
 			<div class="col-sm-12">
 				<p class="text-center">
-					Don't see your question here?  <a href="?p=510">More FAQs &raquo;</a>
+					Don't see your question here?  <a href="?p=28">More FAQs &raquo;</a>
 				</p>
 			</div>
 		</div>
@@ -181,7 +182,7 @@ Template Name: Home Page
 				<h2>beGlammed for iOS &amp; Android</h2>
 				<form action="">
 					<div class="form-group">
-						<label for="mobile">Put in your number and we'll text you a link</label>
+						<label for="mobile">Enter your number and we'll text you a link</label>
 						<input class="form-control input-lg" type="tel" id="mobile" placeholder="203-322-2345">
 					</div>
 					<button class="btn btn-lg btn-primary btn-block">Text me a link</button>
@@ -197,6 +198,14 @@ Template Name: Home Page
 
 		// If there's a carousel on the page, activate it
 		$('.carousel').carousel();
+
+		// Input mask - Restrict count, formatting, numbers only
+		$.extend($.inputmask.defaults, {
+			'placeholder': " "
+		});
+		$('input[type="tel"]').focus(function(){
+			$(this).inputmask("(999) 999-9999");
+		});
 
 		// Activate toolips
 		$(function () {

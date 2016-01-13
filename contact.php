@@ -39,18 +39,18 @@ Template Name: Contact
 									<div class="col-sm-6">
 										<div class="well motif">
 											<address class="address">
-												<span>Fruit Street, Public Benefit Corporation</span>
-												<span>85 Broad Street, 18th Floor</span>
-												<span>New York, NY 10004</span>
+												<span>beGlammed</span>
+												<span>453 South Spring St. | Suite 820</span>
+												<span>Los Angeles, CA 90013</span>
 											</address>
 											<hr>
 											<address class="details">
-												<span><strong>Phone: </strong><a href="tel:6179810920">1-617-981-0920</a></span>
-												<span><strong>Email: </strong><a href="mailto:sales@fruitstreet.com?subject=New Contact Inquiry" target="_blank">sales@fruitstreet.com</a></span>
+												<span><strong>Phone: </strong><a href="tel:3103626190">(310) 362-6190</a></span>
+												<span><strong>Email: </strong><a href="info@beglammed.com?subject=New Contact Inquiry" target="_blank">info@beglammed.com</a></span>
 											</address>
 										</div>
 										<div class="google-map">
-											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6380866008367!2d-74.01118079999999!3d40.7039677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1410666b89%3A0x9185260693907641!2s85+Broad+St%2C+New+York%2C+NY+10004!5e0!3m2!1sen!2sus!4v1444238070854" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.846880123962!2d-118.25195398478506!3d34.04779868060707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c64a580b36c9%3A0x51aa9c6b795ff722!2s453+S+Spring+St+%23820%2C+Spring+Arts+Tower%2C+Los+Angeles%2C+CA+90013!5e0!3m2!1sen!2sus!4v1449877744353" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 										</div>
 									</div>
 								</div>

@@ -8,36 +8,34 @@
 					<div class="row">
 
 						<!-- Footer Bucket 1 -->
-						<div class="col-sm-2 bucket">
+						<div class="col-sm-3 bucket">
 							<h3>Company</h3>
 							<?php footer_bucket_1(); ?>
 						</div>
 
 						<!-- Footer Bucket 2 -->
-						<div class="col-sm-2 bucket">
+						<div class="col-sm-3 bucket">
 							<h3>Services</h3>
 							<?php footer_bucket_2(); ?>
 						</div>
 						
 						<!-- Footer Bucket 3 -->
-						<div class="col-sm-2 bucket resources">
+						<div class="col-sm-3 bucket">
 							<h3>Gifts</h3>
 							<?php footer_bucket_3(); ?>
 						</div>
 
 						<!-- Footer Bucket 4 -->
-						<div class="col-sm-2 bucket badges">
+						<div class="col-sm-3 bucket">
 							<h3>For Stylists</h3>
 							<?php footer_bucket_4(); ?>
 
-						</div>
-
-						<div class="col-sm-3 bucket">
-							<h3>Contact Us</h3>
-								<ul>
-									<li>Customer Support: 310-362-6190</li>
-									<li>Email: info@beglammed.com</li>
-								</ul>
+							<ul class="social-media">
+								<li class="facebook"><a href="https://www.facebook.com/beglammednow/" target="_blank"></a></li>
+								<li class="twitter"><a href="https://twitter.com/beglammednow" target="_blank"></a></li>
+								<li class="pinterest"><a href="https://www.pinterest.com/beglammed/" target="_blank"></a></li>
+								<li class="instagram"><a href="https://www.instagram.com/beglammednow/" target="_blank"></a></li>
+							</ul>
 						</div>
 					</div>
 

@@ -40,14 +40,17 @@ Template Name: Testimonials
 							<?php if(get_field('testimonials')): ?>
 
 							<?php while(has_sub_field('testimonials')): ?>
+								<br>
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'row testimonial clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-								<div class="col-sm-8">
-									<blockquote><?php the_sub_field('quote'); ?></blockquote>
-								</div>
+								
 								<div class="logo col-sm-4 text-center">
 									<img src="<?php the_sub_field('headshot'); ?>" alt="" class="img-thumbnail img-responsive"><br>
-									<?php the_sub_field('name'); ?>
 								</div>
+
+								<div class="col-sm-8">
+									<blockquote><span>&ldquo;</span><?php the_sub_field('quote'); ?> <small><?php the_sub_field('name'); ?>, <em><?php the_sub_field('city'); ?></em></small></blockquote>
+								</div>
+								
 							</article> <!-- end article -->
 							<?php endwhile; endif; ?>
 

@@ -1,86 +1,65 @@
 @media screen and (max-width: 767px)
-	.navbar
-		.navbar-header
-			.navbar-brand
-				background-size: auto 38px
-				background-position: center center
-				padding: 0
-				margin-top: 8px
-				width: 200px
-				height: 40px
-		.navbar-toggle
-			margin: 5px 5px 0 0
-			border: none
-			&:hover
-				background: transparent
+	header
+		.navbar
+			.navbar-header
+				.navbar-brand
+					background-size: auto 28px
+					background-position: center center
+					padding: 0
+					margin-top: 10px
+					width: 160px
+					height: 40px
+			.navbar-toggle
+				margin: 5px 5px 0 0
+				border: none
+				&:hover
+					background: transparent
+					.icon-bar
+						background: $blue
+					.text
+						color: $blue
 				.icon-bar
-					background: $blue
+					background: $red
+					border-radius: 1px
+					height: 3px
+					width: 26px
 				.text
-					color: $blue
-			.icon-bar
-				background: $red
-				border-radius: 1px
-				height: 3px
-				width: 26px
-			.text
-				font-size: 9px
-				color: $red
-				text-transform: uppercase
-		.navbar-collapse
-			.navbar-nav
-				margin-top: 10px
-				&.utility
-					position: relative
-					right: auto
-					top: auto
+					font-size: 9px
+					color: $red
+					text-transform: uppercase
+			.navbar-collapse
+				.navbar-nav
+					margin-top: 10px
+					&.utility
+						position: relative
+						right: auto
+						top: auto
+						li
+							width: 33%
+							margin-bottom: 15px
+							a
+								font-size: 14px
+								&:hover
+									text-decoration: none
+									color: $blue
 					li
-						width: 33%
-						margin-bottom: 15px
-						a
-							font-size: 14px
-							&:hover
-								text-decoration: none
+						float: left
+						width: 50%
+						text-align: center
+						&.phone
+							// clear: both
+							// float: none
+							// width: 100%
+							// margin-bottom: 10px
+						&:last-child
+							padding-right: 12px
+							a
 								color: $blue
-				li
-					float: left
-					width: 50%
-					text-align: center
-					&.phone
-						// clear: both
-						// float: none
-						// width: 100%
-						// margin-bottom: 10px
-					&:last-child
-						padding-right: 12px
 						a
-							color: $blue
-					a
-						padding: 12px
-						font-size: 15px
-						line-height: 1.2
+							padding: 12px
+							font-size: 15px
+							line-height: 1.2
 	body.home.page
-		.container
-			margin-right: auto!important
-			margin-left: auto!important
-			padding-left: 15px!important
-			padding-right: 15px!important
-		section
-			overflow-x: hidden
-			padding: 3em 0!important
-			h1, h2
-				font-size: 2em
-			.btn-default
-				border: 1px solid #dadada
-		.hero
-			display: block
-			background-position: 78% 0%
-			min-height: 420px
-			padding: 2em 0!important
-			h1
-				font-size: 2.25em
-				margin-top: 0
-			h2
-				font-size: 18px
 		.logos
 			.logo
 				width: 50%

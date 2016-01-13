@@ -18,7 +18,15 @@ header
 				a
 					padding: 20px
 					font-size: 1em
-					font-weight: 600
+					font-weight: 300
+					&:hover
+						color: $red
+				&.current-menu-item
+					a
+						background: transparent
+						color: black
+						&:hover
+							background: transparent
 			&.primary
 				margin: 30px 0 0 -50%
 			&.utility

@@ -15,8 +15,7 @@ Template Name: FAQs
 	</div>
 </section>*/ ?>
 
-
-<section class="faq motif">
+<section class="faq long-faq" id="general">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
@@ -34,7 +33,7 @@ Template Name: FAQs
 							<div class="panel-heading">
 								<h4 class="panel-title">
 									<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php the_sub_field('id'); ?>" class="collapsed">
-										<i class="glyphicon glyphicon-plus"></i><i class="glyphicon glyphicon-minus"></i>	<?php the_sub_field('question'); ?>
+										<i class="glyphicon glyphicon-triangle-right"></i><i class="glyphicon glyphicon-triangle-bottom"></i>	<?php the_sub_field('question'); ?>
 									</a>
 								</h4>
 							</div>
@@ -51,20 +50,20 @@ Template Name: FAQs
 				<!-- end of Repeater custom fields and dynamic content -->
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-sm-12">
-				<p class="text-center">Can't find the answer to your question? <a href="<?php bloginfo('url'); ?>/contact">Contact us &raquo;</a></p>
-				<p class="text-center"><a href="#hero" class="btn btn-lg btn-primary">Free 14 Day Trial <i class="glyphicon glyphicon-chevron-right"></i></a></p>
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="text-center">Can't find the answer to your question? <a href="<?php bloginfo('url'); ?>/contact">Contact us &raquo;</a></p>
+				</div>
 			</div>
-		</div>
 	</div>
 </section>
+
 
 <script>
 	jQuery(document).ready(function($){
 
 		// Initialize accordion UI and open the first accordion panel
-		$('#collapse1').addClass('in').parent().find('.panel-heading a').removeClass('collapsed');
+		//$('#general #collapse1, #wedding #collapse1').addClass('in').parent().find('.panel-heading a').removeClass('collapsed');
 
 		// Smooth Scroll Functionality
 		$('.scroll, .scroll a').smoothScroll({
