@@ -34,7 +34,7 @@ Template Name: Gift Cards
 									<?php the_content(); ?>
 									<div class="row">
 										<div class="col-lg-9">
-											<form action="" class="form" id="gift_cards">
+											<form action="<?php bloginfo('url'); ?>/gift-card-thank-you" class="form" id="gift_cards">
 												<fieldset>
 													<legend>Choose gift card dollar amount</legend>
 													<div class="form-group price">
@@ -191,6 +191,9 @@ Template Name: Gift Cards
 				} else {
 					error.insertAfter(element);
 				}
+			},
+			submitHandler: function(form) {
+				form.submit();
 			}
 		});
 

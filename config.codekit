@@ -5716,6 +5716,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/gift-card-package.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12468,
+		"inputAbbreviatedPath": "\/library\/images\/gift-card-package.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/gift-card-package.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/group-inquiry-featured-image.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
