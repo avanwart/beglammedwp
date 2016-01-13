@@ -15,17 +15,17 @@
 				&:hover
 					background: transparent
 					.icon-bar
-						background: $blue
+						background: $black
 					.text
-						color: $blue
+						color: $black
 				.icon-bar
-					background: $red
+					background: $black
 					border-radius: 1px
 					height: 3px
 					width: 26px
 				.text
 					font-size: 9px
-					color: $red
+					color: $black
 					text-transform: uppercase
 			.navbar-collapse
 				.navbar-nav
@@ -59,7 +59,30 @@
 							padding: 12px
 							font-size: 15px
 							line-height: 1.2
+							color: $black
 	body.home.page
+		.hero
+			padding: 3em 0
+			background: white url('../images/hero-bg-mobile3.jpg') center center no-repeat
+			background-size: cover
+			height: 420px
+			h1 
+				margin: 1em 0 0 0
+				font-size: 35px
+				color: white
+			h2
+				font-size: 18px
+				color: white
+				margin-bottom: 2em
+			.form-group
+				select, input, .input-group-btn
+					width: 100%
+					border-radius: 4px
+				select
+					border: none
+					margin-bottom: 10px
+				.btn-primary
+					border-radius: 4px					
 		.logos
 			.logo
 				width: 50%
@@ -187,11 +210,8 @@
 						p
 							font-size: 15px
 		section
-			padding: 0
 			overflow-x: hidden
 			.container
-				padding-left: 0
-				padding-right: 0
 				.card
 					margin-bottom: 0
 					article, .inner
@@ -358,5 +378,30 @@
 							margin: 0
 							.form-control, label, input[type="submit"]
 								max-width: 290px
+
+	.gift-cards
+		form
+			fieldset
+				margin-bottom: 30px
+			.form-group
+				&.price
+					.col-sm-2
+						width: 20%
+						float: left
+						padding: 0 5px
+						&:first-child
+							padding-left: 15px
+						&:last-child
+							padding-right: 15px
+						.radio
+							label
+								width: 100%
+								font-size: 15px
+				.col-xs-4
+					padding: 0 5px
+					&:first-child
+						padding-left: 15px
+					&:last-child
+						padding-right: 15px
 
 

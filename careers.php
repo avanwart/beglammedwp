@@ -39,7 +39,7 @@ Template Name: Careers
 								<div role="tabpanel">
 									<!-- Nav tabs -->
 									<ul class="nav nav-tabs halfs" role="tablist">
-										<li role="presentation" class="active"><a href="#stylists" aria-controls="stylists" role="tab" data-toggle="tab">Hair Stylists &amp; Makeup Artists</a></li>
+										<li role="presentation" class="active"><a href="#stylists" aria-controls="stylists" role="tab" data-toggle="tab">Hairstylists &amp; Makeup Artists</a></li>
 										<li role="presentation" class="two"><a href="#corporate" aria-controls="corporate" role="tab" data-toggle="tab">In-house Positions</a></li>
 									</ul>
 									<!-- Tab panes -->
@@ -47,8 +47,8 @@ Template Name: Careers
 										<div role="tabpanel" class="tab-pane active" id="stylists">
 											<div class="row">
 												<div class="col-sm-12">
-													<p><strong>Interested in becoming a hair stylist or makeup artist for beGlammed?</strong></p>
-													<p>Join a world-class team of beauty professionals and enjoy flexible hours, while working among the best in the industry! We’re always looking for excellent hair stylists and makeup artists to join our team in all cities across the U.S., especially in Austin, Phoenix, or the San Francisco area. We encourage you to apply!</p>
+													<p><strong>Interested in becoming a hairstylist or makeup artist for beGlammed?</strong></p>
+													<p>Join a world-class team of beauty professionals and enjoy flexible hours, while working among the best in the industry! We’re always looking for excellent hairstylists and makeup artists to join our team in all cities across the U.S., especially in Austin, Phoenix, or the San Francisco area. We encourage you to apply!</p>
 													<div class="text-center"><a href="<?php bloginfo('url'); ?>/?p=824" class="btn btn-primary">Apply Now</a></div>
 												</div>
 											</div>
@@ -58,6 +58,45 @@ Template Name: Careers
 												<div class="col-sm-12">
 													<p>We’re looking for talented individuals who want to be a part of creating something extraordinary. Working at beGlammed is like joining a family, and there are tremendous opportunities to grow our organization across the country. We don’t have any openings available at this point in time but please check back in the near future for updates. </p>
 												</div>
+											</div>
+											<div class="text-center"><hr></div>
+							        <div class="row">
+							        	<div class="col-sm-12 text-center">
+							        		<h2>Open Positions</h2>
+							        	</div>
+							        </div>
+							        <div class="row">
+												<div class="col-sm-12">
+													<!-- Get Jobs Repeater custom fields from this Page -->
+													<?php if(get_field('jobs')): ?>
+														<div class="panel-group" id="accordion">
+														<!-- open the loop -->
+														<?php while(has_sub_field('jobs')): ?>
+															<div class="panel panel-default">
+																<div class="panel-heading">
+																	<h4 class="panel-title">
+																		<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php the_sub_field('id'); ?>" class="collapsed">
+																			<i class="glyphicon glyphicon-plus"></i><i class="glyphicon glyphicon-minus"></i>	<?php the_sub_field('job_title'); ?>
+																		</a>
+																	</h4>
+																</div>
+																<div id="collapse<?php the_sub_field('id'); ?>" class="panel-collapse collapse">
+																	<div class="panel-body">
+																		<?php the_sub_field('job_description'); ?>
+									                  <div class="text-center">
+									                  	<a class="btn btn-lg btn-primary" href="<?php the_sub_field('apply_link'); ?>" class="button">View job description <i class="glyphicon glyphicon-chevron-right"></i></a>
+									                  </div>
+																	</div>
+																</div>
+															</div>
+														<?php endwhile; ?>
+														<!-- close the loop -->
+
+														</div>
+													<?php endif; ?>
+													<!-- end of Repeater custom fields and dynamic content -->
+
+									      </div>
 											</div>
 										</div>
 									</div>

@@ -41,8 +41,8 @@ Template Name: Services
 							
 							<div class="row">
 								<div class="col-sm-12 text-center">
-									<h2 class="flat">Hair Services</h2>
-									<p class="intro">Looking for services for a wedding?<br/>Visit the <a href="<?php bloginfo('url'); ?>/?p=26">wedding page</a> for more info.</p>
+									<h2>Hair Services</h2>
+									
 								</div>
 							</div>
 							<?php if(get_field('hair_services')): ?>
@@ -66,13 +66,35 @@ Template Name: Services
 							
 							<div class="row">
 								<div class="col-sm-12 text-center">
-									<h2 class="flat">Makeup Services</h2>
-									<p class="intro">Looking for services for a wedding?<br/>Visit the <a href="<?php bloginfo('url'); ?>/weddings">wedding page</a> for more info.</p>
+									<h2>Makeup Services</h2>
 								</div>
 							</div>
 							<?php if(get_field('makeup_services')): ?>
 							
 							<?php while(has_sub_field('makeup_services')): ?>
+							
+							<article id="post-<?php the_ID(); ?>" <?php post_class( 'row clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+								<div class="col-sm-12 col-md-10 col-md-offset-1 ">
+									<h3><?php the_sub_field('service_name'); ?></h3>
+									<p><?php the_sub_field('service_description'); ?><br/><?php the_sub_field('service_duration'); ?>, <?php the_sub_field('service_starting_price'); ?></p>
+									<a href="#" class="btn btn-primary">Book Now</a>
+								</div>
+							</article> <!-- end article -->
+
+							<?php endwhile; endif; ?>
+
+							<?php wp_reset_postdata(); ?>
+							<!-- divider -->
+							<div class="text-center"><hr/></div>
+							
+							<div class="row">
+								<div class="col-sm-12 text-center">
+									<h2>Wedding Services</h2>
+								</div>
+							</div>
+							<?php if(get_field('wedding_services')): ?>
+							
+							<?php while(has_sub_field('wedding_services')): ?>
 							
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'row clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 								<div class="col-sm-12 col-md-10 col-md-offset-1 ">

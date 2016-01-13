@@ -5375,6 +5375,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/app-store-badge.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5040,
+		"inputAbbreviatedPath": "\/library\/images\/app-store-badge.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/app-store-badge.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/apply-featured-image.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -5573,6 +5584,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/david-tiger-headshot.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7602,
+		"inputAbbreviatedPath": "\/library\/images\/david-tiger-headshot.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/david-tiger-headshot.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/default-featured-image.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -5716,6 +5738,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/library\/images\/gift-card-featured-image2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38956,
+		"inputAbbreviatedPath": "\/library\/images\/gift-card-featured-image2.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/gift-card-featured-image2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/library\/images\/gift-card-package.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -5723,6 +5756,17 @@
 		"initialSize": 12468,
 		"inputAbbreviatedPath": "\/library\/images\/gift-card-package.jpg",
 		"outputAbbreviatedPath": "\/library\/images\/gift-card-package.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/google-play-badge.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4473,
+		"inputAbbreviatedPath": "\/library\/images\/google-play-badge.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/google-play-badge.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -5789,6 +5833,39 @@
 		"initialSize": 61831,
 		"inputAbbreviatedPath": "\/library\/images\/hero-bg-light.jpg",
 		"outputAbbreviatedPath": "\/library\/images\/hero-bg-light.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/hero-bg-mobile.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 39213,
+		"inputAbbreviatedPath": "\/library\/images\/hero-bg-mobile.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/hero-bg-mobile.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/hero-bg-mobile2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25349,
+		"inputAbbreviatedPath": "\/library\/images\/hero-bg-mobile2.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/hero-bg-mobile2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/hero-bg-mobile3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27433,
+		"inputAbbreviatedPath": "\/library\/images\/hero-bg-mobile3.jpg",
+		"outputAbbreviatedPath": "\/library\/images\/hero-bg-mobile3.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -6394,6 +6471,17 @@
 		"initialSize": 55767,
 		"inputAbbreviatedPath": "\/library\/images\/the-temptress.jpg",
 		"outputAbbreviatedPath": "\/library\/images\/the-temptress.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/library\/images\/thumbnail.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56766,
+		"inputAbbreviatedPath": "\/library\/images\/thumbnail.png",
+		"outputAbbreviatedPath": "\/library\/images\/thumbnail.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

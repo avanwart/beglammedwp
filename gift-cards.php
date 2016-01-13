@@ -75,6 +75,16 @@ Template Name: Gift Cards
 																</div>
 															</div>
 														</div>
+														<div class="row">
+															<div class="col-sm-6">
+																<label for="exampleInputAmount">Or, enter a custom amount:</label>
+																<div class="input-group custom_amount">
+																	<div class="input-group-addon">$</div>
+																	<input type="tel" class="form-control" id="custom_amount" name="custom_amount" placeholder="Amount">
+																	<div class="input-group-addon">.00</div>
+																</div>
+															</div>
+														</div>
 													</div>
 												</fieldset>
 
@@ -113,25 +123,26 @@ Template Name: Gift Cards
 												<fieldset>
 													<legend>Payment Information</legend>
 													<div class="form-group">
-														<label for="payment_name">Who is the gift going to?</label>
+														<label for="payment_name">Name on card</label>
 														<input type="text" id="payment_name" name="payment_name" class="form-control" required>
 													</div>
-													<div class="form-group">
-														<label for="payment_card_number">What is their e-mail?</label>
-														<input type="email" id="payment_card_number" name="payment_card_number" class="form-control card_number" required>
+													<div class="form-group cc_number">
+														<label for="payment_card_number">Credit card number</label>
+														<input type="tel" id="payment_card_number" name="payment_card_number" class="form-control card_number" required>
 													</div>
 													<div class="form-group row">
-														<div class="col-sm-4 expiration">
-															<label for="payment_expiration_date">Expiration Date</label>
-															<input type="text" id="payment_expiration_date" name="payment_expiration_date" class="form-control" placeholder="mm / dd" required>
+														<div class="col-xs-4 expiration">
+															<label for="payment_expiration_date" class="hidden-xs">Expiration date</label>
+															<label for="payment_expiration_date" class="visible-xs">Exp. date</label>
+															<input type="tel" id="payment_expiration_date" name="payment_expiration_date" class="form-control" placeholder="mm / dd" required>
 														</div>
-														<div class="col-sm-4 zip">
+														<div class="col-xs-4 zip">
 															<label for="payment_zipcode">Billing ZIP</label>
-															<input type="text" id="payment_zipcode" name="payment_zipcode" class="form-control" required>
+															<input type="tel" id="payment_zipcode" name="payment_zipcode" class="form-control" required>
 														</div>
-														<div class="col-sm-4 cvv">
-															<label for="payment_security_code">Security Code</label>
-															<input type="text" id="payment_security_code" name="payment_security_code" class="form-control" required>
+														<div class="col-xs-4 cvv">
+															<label for="payment_security_code">Security code</label>
+															<input type="tel" id="payment_security_code" name="payment_security_code" class="form-control" required>
 														</div>
 													</div>
 													<div class="form-actions">
@@ -159,6 +170,7 @@ Template Name: Gift Cards
 		$('.datepicker').datepicker();
 
 		$('.radio > label').click(function(e){
+			$('#custom_amount').removeAttr('required');
 			$(this).find('input[type="radio"]').prop("checked", true);
 			$('.radio > label').removeClass('active')
 			$(this).toggleClass('active');
@@ -184,10 +196,21 @@ Template Name: Gift Cards
 			$(this).inputmask("9999");
 		});
 
+		$('.custom_amount input').focus(function(){
+			$(this).inputmask("9999");
+		});
+
+		$('.cc_number input').focus(function(){
+			$(this).inputmask("9999 9999 9999 9999");
+		});
+
+
 		$('#gift_cards').validate({
 			errorPlacement: function(error, element) {
 				if (element.attr("name") == "card_value" ) {
 					error.insertAfter(".price");
+				} else if (element.attr("name") == "custom_amount" ) {
+					error.insertAfter(".custom_amount");
 				} else {
 					error.insertAfter(element);
 				}
@@ -195,6 +218,12 @@ Template Name: Gift Cards
 			submitHandler: function(form) {
 				form.submit();
 			}
+		});
+
+		$('#custom_amount').focus(function(){
+			$(this).attr('required', true);
+			$('.radio input').prop("checked", false).removeAttr('required');
+			$('.radio label').removeClass('active');
 		});
 
 	});

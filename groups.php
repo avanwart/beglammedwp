@@ -65,7 +65,7 @@ Template Name: Groups
 	</div>
 </section>
 </div>
-<section class="groups features" id="services">
+<section class="groups features pink" id="services">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center">
@@ -114,7 +114,7 @@ Template Name: Groups
 							<div class="row">
 								<div class="col-sm-6">
 									<h3>Learn to beGlammed at Home</h3>
-									<p>Learn pro beauty tips! Book beGlammed certified stylists and makeup artists for beauty tutorials to learn how to beGlammed for any occasion.</p>
+									<p>Learn pro beauty tips! Book beGlammed certified hairstylists and makeup artists for beauty tutorials to learn how to beGlammed for any occasion.</p>
 									<p>Want to learn how to create a specific look?  No problem. Let us know what type of look you’re trying to create and we’ll match you with the right expert beauty professional in your area.  Beauty tutorials can be booked for individuals or for a group.</p>
 									<a href="#" class="btn btn-lg btn-primary btn-block">Book Now</a>
 								</div>
@@ -127,7 +127,7 @@ Template Name: Groups
 							<div class="row">
 								<div class="col-sm-6">
 									<h3>beGlammed on Set</h3>
-									<p>Book a beGlammed beauty professional for a photography/film shoot or fashion event. beGlammed stylists and makeup artists in our  Glamorous tier have extensive industry experience, a portfolio of published work and high profile and/or celebrity clientele.</p>
+									<p>Book a beGlammed beauty professional for a photography/film shoot or fashion event. beGlammed hairstylists and makeup artists in our  Glamorous tier have extensive industry experience, a portfolio of published work and high profile and/or celebrity clientele.</p>
 									<a href="#" class="btn btn-lg btn-primary btn-block">Book Now</a>
 								</div>
 								<div class="col-sm-6">

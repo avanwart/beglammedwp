@@ -10,8 +10,9 @@ Template Name: Home Page
 		<div class="row">
 			<div class="col-sm-6">
 				<h1>Look Your Best</h1>
-				<h2>Top rated beauty professionals <br class="hidden-xs"/>come directly to you.</h2>
+				<h2>Top rated hairstylists and makeup artists <br class="hidden-xs"/>come directly to you.</h2>
 			</div>
+		</div>
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 				<form action="" class="form">
@@ -24,14 +25,14 @@ Template Name: Home Page
 								<option value=""></option>
 								<option value=""></option>
 							</select>
-							<select name="date" id="date" class="form-control special">
+							<select name="date" id="date" class="form-control special hidden-xs">
 								<option value="">Date</option>
 								<option value=""></option>
 								<option value=""></option>
 								<option value=""></option>
 								<option value=""></option>
 							</select>
-							<select name="time" id="time" class="form-control special">
+							<select name="time" id="time" class="form-control special hidden-xs">
 								<option value="">Time</option>
 								<option value=""></option>
 								<option value=""></option>
@@ -64,26 +65,26 @@ Template Name: Home Page
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="push">Beauty for Any Occasion</h2>
+				<h2 class="push">Hair and Makeup for Any Occasion</h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-4 text-center">
-				<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/individuals-service.jpg" alt="">
+				<a href="?p=7"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/individuals-service.jpg" alt=""></a>
 				<h3>Individuals</h3>
-				<p>Full makeup and hair styling in the comfort of your home, office or hotel.</p>
+				<p>Full makeup and hair styling in the comfort<br class="hidden-sm"> of your home, office or hotel.</p>
 				<a href="#" class="btn btn-primary">Book Now</a> <a href="?p=7" class="btn btn-default">Learn more</a>
 			</div>
 			<div class="col-sm-4 text-center">
-				<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/groups-service.jpg" alt="">
+				<a href="?p=805"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/groups-service.jpg" alt=""></a>
 				<h3>Groups</h3>
-				<p>Perfect for a night out on the town, corporate events or photo shoots.</p>
+				<p>Perfect for a night out on the town,<br class="hidden-sm"> corporate events or photo shoots.</p>
 				<a href="#" class="btn btn-primary">Book Now</a> <a href="?p=805" class="btn btn-default">Learn more</a>
 			</div>
 			<div class="col-sm-4 text-center">
-				<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/wedding-service.jpg" alt="">
+				<a href="?p=26"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/wedding-service.jpg" alt=""></a>
 				<h3>Weddings</h3>
-				<p>Full service appointments for weddings, rehearsals, bridal showers and engagements.</p>
+				<p>Full service appointments for weddings,<br class="hidden-sm"> rehearsals, bridal showers and engagements.</p>
 				<a href="#" class="btn btn-primary">Book Now</a> <a href="?p=26" class="btn btn-default">Learn more</a>
 			</div>
 			</div>
@@ -91,7 +92,7 @@ Template Name: Home Page
 	</div>
 </section>
 
-<section class="testimonials ash">
+<section class="testimonials pink">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
@@ -121,7 +122,7 @@ Template Name: Home Page
 		</div>
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<a href="sign-up" class="btn btn-primary">Book Now</a>
+				<a href="sign-up" class="btn btn-lg btn-primary">Book Now</a>
 			</div>
 		</div>
 	</div>
@@ -172,22 +173,29 @@ Template Name: Home Page
 	</div>
 </section>
 
-<section class="app ash">
+<section class="app pink">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 col-sm-offset-1 text-right">
 				<img src="<?php bloginfo('template_directory'); ?>/library/images/iphone.jpg" class="phone" alt="">
 			</div>
 			<div class="col-sm-4">
-				<h2>beGlammed for iOS &amp; Android</h2>
+				<h2>Download beGlammed App</h2>
 				<form action="">
 					<div class="form-group">
-						<label for="mobile">Enter your number and we'll text you a link</label>
-						<input class="form-control input-lg" type="tel" id="mobile" placeholder="203-322-2345">
+						<label for="mobile">Enter your phone number and we'll text you a link.</label>
+						<input class="form-control input-lg" type="tel" id="mobile" placeholder="(555) 555-5555">
 					</div>
-					<button class="btn btn-lg btn-primary btn-block">Text me a link</button>
+					<button class="btn btn-lg btn-primary btn-block">Text me a download link</button>
 				</form>
-				<img src="<?php bloginfo('template_directory'); ?>/library/images/app-badges.jpg" class="img-responsive" alt="">
+				<div class="row">
+					<div class="col-sm-6">
+						<a href="https://itunes.apple.com/us/app/beglammed/id907363128?mt=8"><img src="<?php bloginfo('template_directory'); ?>/library/images/app-store-badge.jpg" class="img-responsive" alt=""></a>
+					</div>
+					<div class="col-sm-6">
+						<a href="https://play.google.com/store/apps/details?id=com.beglammed.beglammed&hl=en"><img src="<?php bloginfo('template_directory'); ?>/library/images/google-play-badge.jpg" class="img-responsive" alt=""></a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -69,10 +69,10 @@ Template Name: About Page
 			$('.hero .page-title').addClass('active');
 		}, 600);
 
-		if (window.location.hash == "#salesrep") {
-			$('#field_position').val('Sales Representative').addClass('active');
+		if (window.location.hash == "#productmarketingmanager") {
+			$('#field_position2').val('Product Marketing Manager').addClass('active');
 		} else if (window.location.hash == "#seniorsales") {
-			$('#field_position').val('Senior Sales Representative').addClass('active');
+			$('#field_position2').val('Senior Sales Rep').addClass('active');
 		}
 
 		// Affix functionality

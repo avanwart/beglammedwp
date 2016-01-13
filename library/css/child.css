@@ -169,12 +169,14 @@ section {
 .nav-tabs li {
   width: 25%; }
   .nav-tabs li a {
-    background: #f5f5f5;
+    background: #f7e9e4;
     border-radius: 0;
     text-align: center;
     font-size: 15px;
     padding: 18px 15px;
-    border: 1px solid #dadada;
+    border: 1px solid #eecfc5;
+    border-bottom: none;
+    margin-right: 5px;
     color: #4A4A4A; }
     .nav-tabs li a:hover {
       border: 1px solid #dadada;
@@ -220,8 +222,7 @@ section {
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
     border: none; }
     .panel-group .panel .panel-heading {
-      background: white;
-      border: none; }
+      background: white; }
       .panel-group .panel .panel-heading .panel-title {
         padding: 4px 0; }
         .panel-group .panel .panel-heading .panel-title a {
@@ -233,13 +234,13 @@ section {
             color: #AD4254;
             font-size: 0.75em;
             margin-right: 10px; }
-          .panel-group .panel .panel-heading .panel-title a .glyphicon-triangle-bottom {
+          .panel-group .panel .panel-heading .panel-title a .glyphicon-minus {
             display: inline-block; }
-          .panel-group .panel .panel-heading .panel-title a .glyphicon-triangle-right {
+          .panel-group .panel .panel-heading .panel-title a .glyphicon-plus {
             display: none; }
-          .panel-group .panel .panel-heading .panel-title a.collapsed .glyphicon-triangle-right {
+          .panel-group .panel .panel-heading .panel-title a.collapsed .glyphicon-plus {
             display: inline-block; }
-          .panel-group .panel .panel-heading .panel-title a.collapsed .glyphicon-triangle-bottom {
+          .panel-group .panel .panel-heading .panel-title a.collapsed .glyphicon-minus {
             display: none; }
     .panel-group .panel .panel-collapse .panel-body {
       border-top: 1px dotted #efefef;
@@ -266,14 +267,20 @@ form .control-label {
   font-size: 15px;
   font-weight: 300; }
 form .form-control {
-  border-radius: 0;
-  border-color: #999; }
+  height: 44px;
+  border-radius: 3px;
+  border: 1px solid #d7d7d7;
+  color: #4A4A4A;
+  font-size: 16px; }
+  form .form-control:focus {
+    box-shadow: none;
+    border-color: #66AFE9; }
   form .form-control.error {
     border-color: #188bdc; }
 form .placeholder {
   color: #aaaaaa; }
 form label.error {
-  font-size: 13px;
+  font-size: 11px !important;
   font-weight: normal;
   background: #188bdc;
   color: white;
@@ -337,7 +344,7 @@ header .navbar {
     header .navbar .navbar-nav li.current-menu-item a:hover {
       background: transparent; }
   header .navbar .navbar-nav.primary {
-    margin: 30px 0 0 -50%; }
+    margin: 30px 0 0 -20%; }
   header .navbar .navbar-nav.utility {
     float: right;
     margin-top: 10px; }
@@ -412,6 +419,10 @@ body.home {
       height: 20px;
       width: auto;
       margin-top: 3px; }
+  body.home .features h3 {
+    margin: 20px 0 10px; }
+  body.home .features p {
+    font-size: 14px; }
   body.home .features img {
     display: inline-block;
     width: 85%; }
@@ -472,6 +483,17 @@ body.home {
     width: auto; }
   body.home .app form {
     margin-bottom: 20px; }
+  body.home .app .col-sm-6:first-child {
+    padding-right: 5px; }
+  body.home .app .col-sm-6:last-child {
+    padding-left: 5px; }
+  body.home .app label {
+    font-size: 14px;
+    font-family: "montserratlight", sans-serif;
+    font-weight: 100; }
+  body.home .app .btn-primary {
+    font-size: 15px;
+    padding: 12px; }
 
 .bar {
   transition: all 0.5s ease-in-out;
@@ -597,7 +619,8 @@ body.home {
     height: 55px;
     border-radius: 3px;
     border: 1px solid #d7d7d7;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-bottom: 10px; }
     .gift-cards form .form-group.price .radio label:hover, .gift-cards form .form-group.price .radio label.active {
       background: #AD4254;
       border-color: #AD4254;
@@ -932,6 +955,10 @@ body.home {
 
 .thank-you .card article {
   padding: 40px; }
+.thank-you .card h1 {
+  font-weight: regular;
+  font-family: "montserratregular";
+  font-size: 22px; }
 
 .weddings h1 {
   color: white;
@@ -1152,17 +1179,17 @@ body.home {
     header .navbar .navbar-toggle:hover {
       background: transparent; }
       header .navbar .navbar-toggle:hover .icon-bar {
-        background: #188bdc; }
+        background: #4A4A4A; }
       header .navbar .navbar-toggle:hover .text {
-        color: #188bdc; }
+        color: #4A4A4A; }
     header .navbar .navbar-toggle .icon-bar {
-      background: #AD4254;
+      background: #4A4A4A;
       border-radius: 1px;
       height: 3px;
       width: 26px; }
     header .navbar .navbar-toggle .text {
       font-size: 9px;
-      color: #AD4254;
+      color: #4A4A4A;
       text-transform: uppercase; }
   header .navbar .navbar-collapse .navbar-nav {
     margin-top: 10px; }
@@ -1189,8 +1216,30 @@ body.home {
       header .navbar .navbar-collapse .navbar-nav li a {
         padding: 12px;
         font-size: 15px;
-        line-height: 1.2; }
+        line-height: 1.2;
+        color: #4A4A4A; }
 
+  body.home.page .hero {
+    padding: 3em 0;
+    background: white url("../images/hero-bg-mobile3.jpg") center center no-repeat;
+    background-size: cover;
+    height: 420px; }
+    body.home.page .hero h1 {
+      margin: 1em 0 0 0;
+      font-size: 35px;
+      color: white; }
+    body.home.page .hero h2 {
+      font-size: 18px;
+      color: white;
+      margin-bottom: 2em; }
+    body.home.page .hero .form-group select, body.home.page .hero .form-group input, body.home.page .hero .form-group .input-group-btn {
+      width: 100%;
+      border-radius: 4px; }
+    body.home.page .hero .form-group select {
+      border: none;
+      margin-bottom: 10px; }
+    body.home.page .hero .form-group .btn-primary {
+      border-radius: 4px; }
   body.home.page .logos .logo {
     width: 50%; }
     body.home.page .logos .logo.top {
@@ -1309,35 +1358,31 @@ body.home {
       body.page .modal .modal-dialog .modal-content .modal-body p, body.single .modal .modal-dialog .modal-content .modal-body p {
         font-size: 15px; }
   body.page section, body.single section {
-    padding: 0;
     overflow-x: hidden; }
-    body.page section .container, body.single section .container {
-      padding-left: 0;
-      padding-right: 0; }
-      body.page section .container .card, body.single section .container .card {
-        margin-bottom: 0; }
-        body.page section .container .card article, body.page section .container .card .inner, body.single section .container .card article, body.single section .container .card .inner {
-          padding: 20px 15px; }
-        body.page section .container .card header, body.single section .container .card header {
+    body.page section .container .card, body.single section .container .card {
+      margin-bottom: 0; }
+      body.page section .container .card article, body.page section .container .card .inner, body.single section .container .card article, body.single section .container .card .inner {
+        padding: 20px 15px; }
+      body.page section .container .card header, body.single section .container .card header {
+        height: 150px; }
+        body.page section .container .card header .overlay, body.single section .container .card header .overlay {
           height: 150px; }
-          body.page section .container .card header .overlay, body.single section .container .card header .overlay {
-            height: 150px; }
-            body.page section .container .card header .overlay h1, body.single section .container .card header .overlay h1 {
-              line-height: 150px;
-              font-size: 36px; }
-        body.page section .container .card ul.footer-bucket, body.single section .container .card ul.footer-bucket {
-          background: #efefef;
-          overflow: auto;
-          padding: 10px 0; }
-          body.page section .container .card ul.footer-bucket li, body.single section .container .card ul.footer-bucket li {
-            float: left;
-            width: 50%;
-            text-align: center; }
-            body.page section .container .card ul.footer-bucket li a, body.single section .container .card ul.footer-bucket li a {
-              padding: 8px 0;
-              display: block; }
-            body.page section .container .card ul.footer-bucket li:last-child, body.single section .container .card ul.footer-bucket li:last-child {
-              display: none; }
+          body.page section .container .card header .overlay h1, body.single section .container .card header .overlay h1 {
+            line-height: 150px;
+            font-size: 36px; }
+      body.page section .container .card ul.footer-bucket, body.single section .container .card ul.footer-bucket {
+        background: #efefef;
+        overflow: auto;
+        padding: 10px 0; }
+        body.page section .container .card ul.footer-bucket li, body.single section .container .card ul.footer-bucket li {
+          float: left;
+          width: 50%;
+          text-align: center; }
+          body.page section .container .card ul.footer-bucket li a, body.single section .container .card ul.footer-bucket li a {
+            padding: 8px 0;
+            display: block; }
+          body.page section .container .card ul.footer-bucket li:last-child, body.single section .container .card ul.footer-bucket li:last-child {
+            display: none; }
     body.page section.about .card, body.single section.about .card {
       border: none; }
     body.page section.about.single, body.single section.about.single {
@@ -1455,7 +1500,27 @@ body.home {
     padding: 0;
     margin: 0; }
     body.page-id-508 .about .container .card form fieldset .form-control, body.page-id-508 .about .container .card form fieldset label, body.page-id-508 .about .container .card form fieldset input[type="submit"] {
-      max-width: 290px; } }
+      max-width: 290px; }
+
+  .gift-cards form fieldset {
+    margin-bottom: 30px; }
+  .gift-cards form .form-group.price .col-sm-2 {
+    width: 20%;
+    float: left;
+    padding: 0 5px; }
+    .gift-cards form .form-group.price .col-sm-2:first-child {
+      padding-left: 15px; }
+    .gift-cards form .form-group.price .col-sm-2:last-child {
+      padding-right: 15px; }
+    .gift-cards form .form-group.price .col-sm-2 .radio label {
+      width: 100%;
+      font-size: 15px; }
+  .gift-cards form .form-group .col-xs-4 {
+    padding: 0 5px; }
+    .gift-cards form .form-group .col-xs-4:first-child {
+      padding-left: 15px; }
+    .gift-cards form .form-group .col-xs-4:last-child {
+      padding-right: 15px; } }
 .footer {
   margin-top: 0;
   padding-bottom: 0;
