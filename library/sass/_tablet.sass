@@ -1,50 +1,61 @@
 @media only screen and (min-width: 768px) and (max-width: 1024px)
-	.navbar
-		.navbar-collapse
-			.navbar-nav
-				li
-					a
-						padding: 15px
-						font-size: 14px
+	header
+		.container
+			position: relative
+		.navbar
+			.navbar-collapse
+				padding-right: 0
+				.navbar-nav
+					margin: 40px 0 0 0
+					li
+						a
+							padding: 15px
+							font-size: 14px
+						&:last-child
+							a
+								padding-right: 0
+					&.utility
+						position: absolute
+						right: 0
+						top: 5px
+						margin: 0
+						li
+							float: left
+							&:last-child
+								a
+									padding-right: 15px
+	
+	body.page, body.single
+		section
+			padding: 2em 0
+
 	body.home
 		section
+			padding: 2em 0 3em
 			h1, h2
-				font-size: 2.25em
+				font-size: 2em
 		.hero
-			background-position: 70% 0
+			min-height: 100px
+			height: 300px
+			background-position: 20% 0
+			padding: 2em 0
 			h1
-				font-size: 3em
+				margin: 40px 0 0 0
+				font-size: 2em
 			h2
-				font-size: 20px
+				font-size: 18px
 		.logos
-			img
-				height: 24px
-			.health
-				img
-					height: 16px
-					width: auto
+			display: block
 		.features
 			.nav-tabs
 				li
 					a
 						font-size: 12px
-			.tab-pane
-				padding: 60px
-				.btn-lg
-					padding: 14px 32px
-				&.motif
-					background-image: url('../images/motif.jpg')
-					background-position: 120% 50%
-					background-size: auto 80%
-				&.fitbit
-					background-size: 200px auto
-					background-position: 92% 42%
-				&.patient, &.provider
-					background-image: url('../images/motif.jpg')
-					background-position: 120% 50%
-					background-size: auto 80%
-					background-repeat: no-repeat
+			
 		.testimonials
+			.col-sm-6
+				&:last-child
+					display: none
 			blockquote
 				font-size: 13px
 				small
@@ -52,30 +63,13 @@
 			.thumbnail
 				height: 100px
 				width: auto
-
-	.product
-		section
+		
+	.explore
+		.card
+			height: 420px
 			h2
-				font-size: 28px
-		.providers
-			background-position: 150% 50%
-
-	body.page, body.single
-		section
-			padding: 2em 0
-			.container
-				.card
-					ul.footer-bucket
-						overflow: auto
-						padding: 10px 0
-						li
-							float: left
-							width: 50%
-							text-align: center
-							a
-								padding: 8px 0
-								display: block
-							&:last-child
-								display: none
+				font-size: 17px
+			p
+				font-size: 13px
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)

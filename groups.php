@@ -21,7 +21,7 @@ Template Name: Groups
 		</div>
 	</div>
 </section>
-<section class="groups hero form">
+<section class="groups hero form share">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center">
@@ -30,36 +30,7 @@ Template Name: Groups
 			</div>
 			<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
 				<p>Let’s face it, whether it’s a powder room run or a night with friends, us ladies tend to travel in packs! Queue beGlammed. We’re here not only to make getting ready a lot easier, but also more FUN! Whether you want to host a beGlammed party for a group of your closest friends, or have a team of stylists on-site at one of your events, there are so many ways to beGlammed together! Inquire about our group discounts!</p>
-				<form action="" class="form">
-					<div class="form-group">
-						<div class="input-group">
-							<select name="location" id="location" class="form-control special">
-								<option value="">Location</option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
-							<select name="date" id="date" class="form-control special">
-								<option value="">Date</option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
-							<select name="time" id="time" class="form-control special">
-								<option value="">Time</option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
-							<div class="input-group-btn">
-								<button class="btn btn-primary btn-block">Book an Appointment</button>
-							</div>
-						</div>
-					</div>
-				</form>
+				<div class="hidden-xs"><?php get_template_part('book'); ?></div>
 			</div>
 		</div>
 	</div>
@@ -79,8 +50,8 @@ Template Name: Groups
 					<ul class="nav nav-tabs" role="tablist">
 						<li role="presentation" class="active"><a href="#groups" aria-controls="groups" role="tab" data-toggle="tab">Groups</a></li>
 						<li role="presentation" class="two"><a href="#events" aria-controls="events" role="tab" data-toggle="tab">Events</a></li>
-						<li role="presentation" class="three"><a href="#tutorials" aria-controls="tutorials" role="tab" data-toggle="tab">Beauty Tutorials</a></li>
-						<li role="presentation" class="three"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">Film, Fashion &amp; Photos</a></li>
+						<li role="presentation" class="three hidden-xs"><a href="#tutorials" aria-controls="tutorials" role="tab" data-toggle="tab">Beauty Tutorials</a></li>
+						<li role="presentation" class="three hidden-xs"><a href="#photos" aria-controls="photos" role="tab" data-toggle="tab">Film, Fashion &amp; Photos</a></li>
 					</ul>
 					<!-- Tab panes -->
 					<div class="tab-content">
@@ -90,7 +61,7 @@ Template Name: Groups
 									<h3>Ladies Night Out</h3>
 									<p>Grab a group of your closest girlfriends, some champagne, and prepare to be pampered! </p>
 									<p>The best part? You get 20% off if you book for a group of four or more. Just call or email us ahead of time to ensure the discount is applied!</p>
-									<a href="#" class="btn btn-lg btn-primary btn-block">Book Now</a>
+									<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx" class="btn btn-lg btn-primary btn-block">Book Now</a>
 								</div>
 								<div class="col-sm-6">
 									<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/group-pic.jpg" alt="Selfie style photo of lovely ladies with hair and makeup smiling">
@@ -103,7 +74,7 @@ Template Name: Groups
 									<h3>Bring Beauty to All of Your Guests</h3>
 									<p>Birthday parties, corporate events, sweet sixteens – have a party like no other! Our beauty pop-ups add to the atmosphere of any event by providing on-site hair and makeup services. We love customizing the services we offer to fit individual themes!</p>
 									<p>Make your party one to remember!</p>
-									<a href="#" class="btn btn-lg btn-primary btn-block">Book Now</a>
+									<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx" class="btn btn-lg btn-primary btn-block">Book Now</a>
 								</div>
 								<div class="col-sm-6">
 									<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/events-pic.jpg" alt="Selfie style photo of lovely ladies with hair and makeup smiling">
@@ -116,7 +87,7 @@ Template Name: Groups
 									<h3>Learn to beGlammed at Home</h3>
 									<p>Learn pro beauty tips! Book beGlammed certified hairstylists and makeup artists for beauty tutorials to learn how to beGlammed for any occasion.</p>
 									<p>Want to learn how to create a specific look?  No problem. Let us know what type of look you’re trying to create and we’ll match you with the right expert beauty professional in your area.  Beauty tutorials can be booked for individuals or for a group.</p>
-									<a href="#" class="btn btn-lg btn-primary btn-block">Book Now</a>
+									<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx" class="btn btn-lg btn-primary btn-block">Book Now</a>
 								</div>
 								<div class="col-sm-6">
 									<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/tutorial-pic.jpg" alt="Selfie style photo of lovely ladies with hair and makeup smiling">
@@ -128,7 +99,7 @@ Template Name: Groups
 								<div class="col-sm-6">
 									<h3>beGlammed on Set</h3>
 									<p>Book a beGlammed beauty professional for a photography/film shoot or fashion event. beGlammed hairstylists and makeup artists in our  Glamorous tier have extensive industry experience, a portfolio of published work and high profile and/or celebrity clientele.</p>
-									<a href="#" class="btn btn-lg btn-primary btn-block">Book Now</a>
+									<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx" class="btn btn-lg btn-primary btn-block">Book Now</a>
 								</div>
 								<div class="col-sm-6">
 									<img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/film-pic.jpg" alt="Selfie style photo of lovely ladies with hair and makeup smiling">
@@ -138,7 +109,7 @@ Template Name: Groups
 					</div>
 				</div>
 				<br>
-				<p class="text-center">Would you like to be contacted regarding your group inquiry?  Fill out the <a href="<?php bloginfo('url'); ?>/group-inquiry">group inquiry form &raquo;</a></p>
+				<p class="text-center">Would you like to be contacted regarding your group inquiry?  <br class="visible-xs"><br class="visible-xs">Fill out the <a href="<?php bloginfo('url'); ?>/group-inquiry">group inquiry form &raquo;</a></p>
 			</div>
 		</div>
 	</div>

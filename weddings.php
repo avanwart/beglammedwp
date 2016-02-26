@@ -21,42 +21,13 @@ Template Name: Weddings
 				</div>
 			<div class="row">
 				<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-					<form action="" class="form">
-						<div class="form-group">
-							<div class="input-group">
-								<select name="location" id="location" class="form-control special">
-									<option value="">Location</option>
-									<option value=""></option>
-									<option value=""></option>
-									<option value=""></option>
-									<option value=""></option>
-								</select>
-								<select name="date" id="date" class="form-control special">
-									<option value="">Date</option>
-									<option value=""></option>
-									<option value=""></option>
-									<option value=""></option>
-									<option value=""></option>
-								</select>
-								<select name="time" id="time" class="form-control special">
-									<option value="">Time</option>
-									<option value=""></option>
-									<option value=""></option>
-									<option value=""></option>
-									<option value=""></option>
-								</select>
-								<div class="input-group-btn">
-									<button class="btn btn-primary btn-block">Book an Appointment</button>
-								</div>
-							</div>
-						</div>
-					</form>
+					<?php get_template_part('book'); ?>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="weddings benefits ash">
+<section class="weddings benefits pink">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4 text-center">
@@ -79,14 +50,9 @@ Template Name: Weddings
 </section>
 <section class="weddings look">
 	<div class="container">
-		<div class="row visible-xs visible-sm">
-			<div class="col-sm-12">
-				<?php footer_bucket_2(); ?>
-			</div>
-		</div>
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<h2>We Create the Perfect Look for Your Wedding Day </h2>
+				<h2 class="flat">Hair and Makeup <br class="visible-xs">for Your Wedding Day </h2>
 			</div>
 		</div>
 		<div class="row">
@@ -96,13 +62,13 @@ Template Name: Weddings
 		</div>
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<a href="#" class="btn btn-lg btn-primary">Book Now</a>
+				<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=W" class="btn btn-lg btn-primary">Book Now</a>
 				<br><br>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<p class="medium">Would you like a bridal consultant to contact you? Fill out our <a href="<?php bloginfo('url'); ?>/?p=852">bridal inquiry form &raquo;</a></p>
+				<p class="medium">Would you like a bridal specialist to contact you? <br class="visible-xs"><br class="visible-xs">Fill out our <a href="<?php bloginfo('url'); ?>/?p=852">bridal inquiry form &raquo;</a></p>
 			</div>
 		</div>
 	</div>
@@ -111,7 +77,7 @@ Template Name: Weddings
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<h2 class="flat">Beauty for the Entire Bridal Party</h2>
+				<h2 class="flat">Beauty for the <br class="visible-xs">Entire Bridal Party</h2>
 				<p>Get 15% off your bridal appointment when you book for 3 or more bridesmaids.</p>
 			</div>
 		</div>
@@ -131,7 +97,7 @@ Template Name: Weddings
 		</div>
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<a href="#book" class="scroll btn btn-lg btn-primary">Book Now</a>
+				<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=W" class="scroll btn btn-lg btn-primary">Book Now</a>
 			</div>
 		</div>
 	</div>
@@ -153,7 +119,7 @@ Template Name: Weddings
 					<div class="col-sm-12 col-md-10 col-md-offset-1">
 						<h3><?php the_sub_field('service_name'); ?></h3>
 						<p><?php the_sub_field('service_description'); ?><br/><?php the_sub_field('service_duration'); ?>, <?php the_sub_field('service_starting_price'); ?></p>
-						<a href="#book" class="scroll btn btn-primary">Book Now</a>
+						<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=W" class="scroll btn btn-primary">Book Now</a>
 					</div>
 				</article> <!-- end article -->
 			</div>
@@ -170,7 +136,7 @@ Template Name: Weddings
 					<div class="col-sm-12 col-md-10 col-md-offset-1">
 						<h3><?php the_sub_field('service_name'); ?></h3>
 						<p><?php the_sub_field('service_description'); ?><br/><?php the_sub_field('service_duration'); ?>, <?php the_sub_field('service_starting_price'); ?></p>
-						<a href="#book" class="scroll btn btn-primary">Book Now</a>
+						<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=W" class="scroll btn btn-primary">Book Now</a>
 					</div>
 				</article> <!-- end article -->
 			</div>

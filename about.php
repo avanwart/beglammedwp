@@ -30,7 +30,7 @@ Template Name: About Page
 									<h1 class="page-title"><?php the_title(); ?></h1>
 								</div>
 							</header>
-							<div class="row visible-xs visible-sm">
+							<div class="row visible-xs">
 								<div class="col-sm-12">
 									<?php footer_bucket_1(); ?>
 								</div>
@@ -57,13 +57,13 @@ Template Name: About Page
 		$('.hero').addClass('active');
 
 		// Affix Sidebar
-		$(window).scroll(function() {
+		/*$(window).scroll(function() {
 			if ($(window).scrollTop() >= 160) {
 				$('#sidebar').addClass('affix');
 			} else {
 				$('#sidebar').removeClass('affix');
 			}
-		});
+		});*/
 
 		setTimeout(function(){
 			$('.hero .page-title').addClass('active');
@@ -76,7 +76,7 @@ Template Name: About Page
 		}
 
 		// Affix functionality
-		$('.hero').bind('inview', function (event, visible) {
+		/*$('.hero').bind('inview', function (event, visible) {
       if (visible == true) {
         // element is now visible in the viewport
        $('.well').removeClass('affix');
@@ -85,7 +85,7 @@ Template Name: About Page
       	// element is no longer visible in the viewport
         $('.well').addClass('affix');
       }
-    });
+    });*/
 
 	});
 </script>

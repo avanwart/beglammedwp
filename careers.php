@@ -29,7 +29,7 @@ Template Name: Careers
 									<h1 class="page-title"><?php the_title(); ?></h1>
 								</div>
 							</header>
-							<div class="row visible-xs visible-sm">
+							<div class="row visible-xs">
 								<div class="col-sm-12">
 									<?php footer_bucket_1(); ?>
 								</div>
@@ -40,15 +40,14 @@ Template Name: Careers
 									<!-- Nav tabs -->
 									<ul class="nav nav-tabs halfs" role="tablist">
 										<li role="presentation" class="active"><a href="#stylists" aria-controls="stylists" role="tab" data-toggle="tab">Hairstylists &amp; Makeup Artists</a></li>
-										<li role="presentation" class="two"><a href="#corporate" aria-controls="corporate" role="tab" data-toggle="tab">In-house Positions</a></li>
+										<li role="presentation" class="two"><a href="#corporate" aria-controls="corporate" role="tab" data-toggle="tab">In-house <br class="visible-xs">Positions</a></li>
 									</ul>
 									<!-- Tab panes -->
 									<div class="tab-content">
 										<div role="tabpanel" class="tab-pane active" id="stylists">
 											<div class="row">
 												<div class="col-sm-12">
-													<p><strong>Interested in becoming a hairstylist or makeup artist for beGlammed?</strong></p>
-													<p>Join a world-class team of beauty professionals and enjoy flexible hours, while working among the best in the industry! We’re always looking for excellent hairstylists and makeup artists to join our team in all cities across the U.S., especially in Austin, Phoenix, or the San Francisco area. We encourage you to apply!</p>
+													<?php the_field('stylist_intro_paragraph'); ?>
 													<div class="text-center"><a href="<?php bloginfo('url'); ?>/?p=824" class="btn btn-primary">Apply Now</a></div>
 												</div>
 											</div>
@@ -56,7 +55,7 @@ Template Name: Careers
 										<div role="tabpanel" class="tab-pane" id="corporate">
 											<div class="row">
 												<div class="col-sm-12">
-													<p>We’re looking for talented individuals who want to be a part of creating something extraordinary. Working at beGlammed is like joining a family, and there are tremendous opportunities to grow our organization across the country. We don’t have any openings available at this point in time but please check back in the near future for updates. </p>
+													<?php the_field('in_house_intro_paragraph'); ?>
 												</div>
 											</div>
 											<div class="text-center"><hr></div>
@@ -76,7 +75,7 @@ Template Name: Careers
 																<div class="panel-heading">
 																	<h4 class="panel-title">
 																		<a data-toggle="collapse" data-parent="#accordion" href="#collapse<?php the_sub_field('id'); ?>" class="collapsed">
-																			<i class="glyphicon glyphicon-plus"></i><i class="glyphicon glyphicon-minus"></i>	<?php the_sub_field('job_title'); ?>
+																			<i class="glyphicon glyphicon-triangle-right"></i><i class="glyphicon glyphicon-triangle-bottom"></i>	<?php the_sub_field('job_title'); ?>
 																		</a>
 																	</h4>
 																</div>
@@ -84,7 +83,7 @@ Template Name: Careers
 																	<div class="panel-body">
 																		<?php the_sub_field('job_description'); ?>
 									                  <div class="text-center">
-									                  	<a class="btn btn-lg btn-primary" href="<?php the_sub_field('apply_link'); ?>" class="button">View job description <i class="glyphicon glyphicon-chevron-right"></i></a>
+									                  	<a class="btn btn-lg btn-primary" href="<?php the_sub_field('apply_link'); ?>" class="button">View Job Description</a>
 									                  </div>
 																	</div>
 																</div>
@@ -118,13 +117,13 @@ Template Name: Careers
 		$('.hero').addClass('active');
 
 		// Affix Sidebar
-		$(window).scroll(function() {
+		/*$(window).scroll(function() {
 			if ($(window).scrollTop() >= 160) {
 				$('#sidebar').addClass('affix');
 			} else {
 				$('#sidebar').removeClass('affix');
 			}
-		});
+		});*/
 	});
 </script>
 
@@ -132,7 +131,7 @@ Template Name: Careers
 	jQuery(document).ready(function($){
 
 		// Initialize accordion UI and open the first accordion panel
-		$('#collapse1').addClass('in').parent().find('.panel-heading a').removeClass('collapsed');
+		//$('#collapse1').addClass('in').parent().find('.panel-heading a').removeClass('collapsed');
 
 		// Smooth Scroll Functionality
 		$('.scroll, .scroll a').smoothScroll({

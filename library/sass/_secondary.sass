@@ -73,6 +73,26 @@
 				padding-bottom: 5px
 				border-bottom: 1px solid $ash
 
+// Location pages
+.locations
+	background: white
+	h3
+		font-size: 22px
+		color: $black
+		font-weight: regular
+		font-family: 'montserratregular', sans-serif
+	ul.cities
+		list-style-type: none
+		margin: 0 0 50px
+		padding: 0
+		display: inline-block
+		width: 150px
+		li
+			margin-bottom: 10px
+			text-align: left
+			a
+				color: $black
+
 // About Pages
 .about
 	.well
@@ -118,6 +138,8 @@
 		fieldset
 			margin-bottom: 30px
 		.form-group
+			.error
+				top: -8px
 			&.price
 				.col-sm-2
 					width: 20%
@@ -328,14 +350,14 @@
 			article
 				padding: 30px
 		.well
-			background: #FFF0F2
+			background: $pink
 			border-radius: 0
 			padding: 20px
 			hr
 				width: 100%
 				display: block
 				margin: 20px 0
-				border-color: #F5DBDF
+				border-color: darken($pink, 5%)
 		address
 			span
 				display: block
@@ -606,6 +628,7 @@
 // Explore styles
 .explore
 	background: white
+	padding-top: 2em
 	h1
 		margin-bottom: 20px
 	.filters
@@ -635,12 +658,15 @@
 		background: none
 		border: none
 		margin: 0 0 40px
+		height: 480px
 		a
 			text-decoration: underline
-			display: inline-block
+			display: block
 		img
 			max-width: 100%
 			height: auto
+			&:hover
+				opacity: .6
 		h2
 			font-size: 22px
 			font-weight: bold

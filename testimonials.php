@@ -31,9 +31,9 @@ Template Name: Testimonials
 								</div>
 							</header>
 
-							<div class="row visible-xs visible-sm">
+							<div class="row visible-xs">
 								<div class="col-sm-12">
-									<?php footer_bucket_2(); ?>
+									<?php footer_bucket_1(); ?>
 								</div>
 							</div>
 							
@@ -48,7 +48,7 @@ Template Name: Testimonials
 								</div>
 
 								<div class="col-sm-8">
-									<blockquote><span>&ldquo;</span><?php the_sub_field('quote'); ?> <small><?php the_sub_field('name'); ?>, <em><?php the_sub_field('city'); ?></em></small></blockquote>
+									<blockquote><span>&ldquo;</span><?php the_sub_field('quote'); ?> <small><?php the_sub_field('name'); ?><em><?php the_sub_field('city'); ?></em></small></blockquote>
 								</div>
 								
 							</article> <!-- end article -->

@@ -5,57 +5,28 @@ Template Name: Home Page
 ?>
 
 <?php get_header(); ?>
-<section class="hero">
+<section class="hero" style="background-image: url('<?php the_field('hero_background'); ?>');">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6">
 				<h1>Look Your Best</h1>
-				<h2>Top rated hairstylists and makeup artists <br class="hidden-xs"/>come directly to you.</h2>
+				<h2>Top rated hairstylists and makeup artists <br class="hidden-xs hidden-sm"/>come directly to you.</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-				<form action="" class="form">
-					<div class="form-group">
-						<div class="input-group">
-							<select name="location" id="location" class="form-control special">
-								<option value="">Location</option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
-							<select name="date" id="date" class="form-control special hidden-xs">
-								<option value="">Date</option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
-							<select name="time" id="time" class="form-control special hidden-xs">
-								<option value="">Time</option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-								<option value=""></option>
-							</select>
-							<div class="input-group-btn">
-								<button class="btn btn-primary btn-block">Book an Appointment</button>
-							</div>
-						</div>
-					</div>
-				</form>
+			<div class="col-sm-12 col-md-9">
+				<?php get_template_part('book'); ?>
 			</div>
 		</div>
 		</div>
 	</div>
 </section>
-<section class="logos lightGrey">
+<section class="logos darkPink">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
 				<img class="hidden-xs" src="<?php bloginfo('template_directory'); ?>/library/images/logo-bar-desktop.jpg" alt="Marie Claire logo, People logo, Vanity Fair logo, Nylon logo, Los Angeles Times logo">
-				<img class="visible-xs img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/logo-bar-desktop.jpg" alt="Marie Claire logo, People logo, Vanity Fair logo, Nylon logo, Los Angeles Times logo">
+				<img class="visible-xs img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/logo-bar-mobile.jpg" alt="Marie Claire logo, People logo, Vanity Fair logo, Nylon logo, Los Angeles Times logo">
 			</div>
 		</div>
 	</div>
@@ -65,27 +36,27 @@ Template Name: Home Page
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-12">
-				<h2 class="push">Hair and Makeup for Any Occasion</h2>
+				<h2 class="push">Hair and Makeup <br class="visible-xs">for Any Occasion</h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-4 text-center">
 				<a href="?p=7"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/individuals-service.jpg" alt=""></a>
 				<h3>Individuals</h3>
-				<p>Full makeup and hair styling in the comfort<br class="hidden-sm"> of your home, office or hotel.</p>
-				<a href="#" class="btn btn-primary">Book Now</a> <a href="?p=7" class="btn btn-default">Learn more</a>
+				<p>Full makeup and hair styling in the comfort<br class="hidden-xs hidden-sm"> of your home, office or hotel.</p>
+				<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=P" class="btn btn-primary">Book Now</a> <a href="?p=7" class="btn btn-default">Learn more</a>
 			</div>
 			<div class="col-sm-4 text-center">
 				<a href="?p=805"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/groups-service.jpg" alt=""></a>
 				<h3>Groups</h3>
 				<p>Perfect for a night out on the town,<br class="hidden-sm"> corporate events or photo shoots.</p>
-				<a href="#" class="btn btn-primary">Book Now</a> <a href="?p=805" class="btn btn-default">Learn more</a>
+				<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=B" class="btn btn-primary">Book Now</a> <a href="?p=805" class="btn btn-default">Learn more</a>
 			</div>
 			<div class="col-sm-4 text-center">
 				<a href="?p=26"><img class="img-responsive" src="<?php bloginfo('template_directory'); ?>/library/images/wedding-service.jpg" alt=""></a>
 				<h3>Weddings</h3>
 				<p>Full service appointments for weddings,<br class="hidden-sm"> rehearsals, bridal showers and engagements.</p>
-				<a href="#" class="btn btn-primary">Book Now</a> <a href="?p=26" class="btn btn-default">Learn more</a>
+				<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=W" class="btn btn-primary">Book Now</a> <a href="?p=26" class="btn btn-default">Learn more</a>
 			</div>
 			</div>
 		</div>
@@ -104,7 +75,7 @@ Template Name: Home Page
 			<div class="row">
 				<!-- open the Repeater loop -->
 				<?php while(has_sub_field('testimonials')): ?>
-					<div class="col-sm-4 text-center testimonial">
+					<div class="col-sm-6 col-md-4 text-center testimonial">
 						<img class="thumbnail img-circle" src="<?php the_sub_field('headshot'); ?>" alt="">
 						<blockquote>
 							&ldquo;<?php the_sub_field('quote'); ?>&rdquo; <small><?php the_sub_field('name'); ?>,	<em><?php the_sub_field('city'); ?></em></small>
@@ -122,7 +93,7 @@ Template Name: Home Page
 		</div>
 		<div class="row">
 			<div class="col-sm-12 text-center">
-				<a href="sign-up" class="btn btn-lg btn-primary">Book Now</a>
+				<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=P" class="btn btn-lg btn-primary">Book Now</a>
 			</div>
 		</div>
 	</div>
@@ -173,27 +144,27 @@ Template Name: Home Page
 	</div>
 </section>
 
-<section class="app pink">
+<section class="app pink" id="download">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4 col-sm-offset-1 text-right">
+			<div class="col-sm-4 col-sm-offset-1 text-right hidden-xs">
 				<img src="<?php bloginfo('template_directory'); ?>/library/images/iphone.jpg" class="phone" alt="">
 			</div>
 			<div class="col-sm-4">
-				<h2>Download beGlammed App</h2>
-				<form action="">
+				<h2>Download beGlammed<br class="hidden-xs"/>for iOS &amp; Android</h2>
+				<!-- <form action="">
 					<div class="form-group">
 						<label for="mobile">Enter your phone number and we'll text you a link.</label>
 						<input class="form-control input-lg" type="tel" id="mobile" placeholder="(555) 555-5555">
 					</div>
 					<button class="btn btn-lg btn-primary btn-block">Text me a download link</button>
-				</form>
+				</form> -->
 				<div class="row">
-					<div class="col-sm-6">
-						<a href="https://itunes.apple.com/us/app/beglammed/id907363128?mt=8"><img src="<?php bloginfo('template_directory'); ?>/library/images/app-store-badge.jpg" class="img-responsive" alt=""></a>
+					<div class="col-xs-6">
+						<a href="https://itunes.apple.com/us/app/beglammed/id907363128?mt=8" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/library/images/app-store-badge.jpg" class="img-responsive" alt=""></a>
 					</div>
-					<div class="col-sm-6">
-						<a href="https://play.google.com/store/apps/details?id=com.beglammed.beglammed&hl=en"><img src="<?php bloginfo('template_directory'); ?>/library/images/google-play-badge.jpg" class="img-responsive" alt=""></a>
+					<div class="col-xs-6">
+						<a href="https://play.google.com/store/apps/details?id=com.beglammed.beglammed&hl=en" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/library/images/google-play-badge.jpg" class="img-responsive" alt=""></a>
 					</div>
 				</div>
 			</div>
@@ -242,7 +213,9 @@ Template Name: Home Page
 			
 		}
 
+	
 	});
-			</script>
 
-			<?php get_footer(); ?>
+</script>
+
+<?php get_footer(); ?>

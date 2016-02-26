@@ -26,15 +26,16 @@ $navbarHeight: 90px
 $ash: #FAFAFA
 $black: #4A4A4A
 $blue: #188bdc
-$red: #AD4254
-$darkRed: #8E2033
+$red: #772F3C
+$darkRed: #6b202d
 $pink: #fdf6f3
+$darkPink: #F2CDC1
 
 body
 	-webkit-font-smoothing: antialiased
 	font-family: 'montserratlight', sans-serif
 	font-size: 16px
-	background: $ash
+	background: $pink
 	h1, h2, h3, h4, legend
 		font-family: 'montserratlight', sans-serif
 		color: $black
@@ -68,14 +69,20 @@ body
 		&:hover
 			text-decoration: underline
 			color: $red
+	.ui-timepicker-wrapper
+		width: 189px
+		.ui-timepicker-list li
+			line-height: 1.8
+	.relative
+		position: relative
 
 .btn-primary
 	background: $red
-	background-image: linear-gradient(to right, #cb778b, $red)
+	background-image: linear-gradient(to right, $red, $darkRed)
 	border: none
 	&:hover
-		background: lighten($red, 5%)
-		border-color: lighten($red, 5%)
+		background: $darkRed
+		border-color: $darkRed
 
 .btn-default
 	border: none
@@ -89,6 +96,8 @@ form
 		font-family: 'montserratregular', sans-serif
 		font-size: 20px
 		margin-bottom: 10px
+.ui-timepicker-disabled
+	display: none
 
 section
 	padding: 4em 0
@@ -96,6 +105,8 @@ section
 		background: $ash
 	&.pink
 		background: $pink
+	&.darkPink
+		background: $darkPink
 	article
 		ul
 			margin-bottom: 30px
@@ -107,7 +118,7 @@ section
 
 	.card
 		background: white
-		border: 1px solid #eaeaea
+		border: 1px solid darken($pink, 5%)
 
 
 	// Image Styles
@@ -174,33 +185,35 @@ section
 		width: 100%
 		select:first-child
 			border-radius: 4px 0 0 4px
+	.tight
+		padding: 0
 	.form-group
 		input, select
 			border-right: 0
 			height: 50px
 		input, select, .input-group-btn
-			float: left
-			width: 25%
 			margin: 0
 			button
 				height: 50px
 				font-size: 14px
+				border-radius: 0 4px 4px 0
 
 
 // Bootstrap UI component styles
 .nav-tabs
+	border-bottom: 1px solid darken($pink, 8%)
 	&.halfs
 		li
 			width: 50%
 	li
 		width: 25%
 		a
-			background: #f7e9e4
+			background: $pink
 			border-radius: 0
 			text-align: center
 			font-size: 15px
 			padding: 18px 15px
-			border: 1px solid darken(#f7e9e4, 8%)
+			border: 1px solid darken($pink, 8%)
 			border-bottom: none
 			margin-right: 5px
 			color: $black
@@ -210,13 +223,14 @@ section
 		&.active
 			a
 				background: white
+				border-color: darken($pink, 8%)
 				border-bottom-color: transparent
 				&:hover
 					border-bottom-color: transparent
 
 .tab-pane
 	background: white
-	border: 1px solid #ddd
+	border: 1px solid darken($pink, 8%)
 	border-top: none
 	padding: 50px
 	&#fans
@@ -264,14 +278,14 @@ section
 						color: $red
 						font-size: .75em
 						margin-right: 10px
-					.glyphicon-minus
+					.glyphicon-minus, .glyphicon-triangle-bottom
 						display: inline-block
-					.glyphicon-plus
+					.glyphicon-plus, .glyphicon-triangle-right
 						display: none
 					&.collapsed
-						.glyphicon-plus
+						.glyphicon-plus, .glyphicon-triangle-right
 							display: inline-block
-						.glyphicon-minus
+						.glyphicon-minus, .glyphicon-triangle-bottom
 							display: none
 		// Body of the accordion				
 		.panel-collapse
@@ -298,6 +312,8 @@ section
 .frm_loading_now
 	visibility: visible
 form
+	.form-group
+		position: relative
 	input[type="submit"]
 		text-decoration: none
 	.control-label
@@ -317,18 +333,32 @@ form
 	.placeholder
 		color: #aaaaaa
 	label.error
-		font-size: 11px!important
-		font-weight: normal
-		background: $blue
+		position: absolute
+		top: -34px
+		right: 0px
+		background: rgba(0, 0, 0, .7)
 		color: white
 		padding: 5px 10px
-		display: block
-		border-radius: 0 0 4px 4px
-		margin-top: -1px
+		border-radius: 2px
+		font-size: 14px
+		white-space: nowrap
+		font-family: 'montserratlight'
+		font-weight: 100
+		&:after
+			content: ''
+			position: absolute
+			width: 0
+			height: 0
+			border: 8px solid
+			border-color: rgba(0, 0, 0, .7) transparent transparent transparent
+			display: block
+			top: 30px
+			right: 15px
 	input[type="tel"]
 		-webkit-user-select: none
-	select.form-control
+	.form-control
 		&.special
+			cursor: pointer
 			-webkit-appearance: none
 			-moz-appearance: none
 			appearance: none
@@ -336,8 +366,22 @@ form
 			background-position: 92% 22px
 			background-repeat: no-repeat
 			background-size: 10px 6px
-			border: 1px solid #aaa
-			border-right: none
+			border: none 
+			border-right: 1px solid #dadada
+			box-shadow: none
+			&::-webkit-input-placeholder
+				color: $black
+			&:-moz-placeholder
+				color: $black
+			&::-moz-placeholder
+				color: $black
+			&:-ms-input-placeholder
+				color: $black
+			&.last
+				border: none
+			&:hover
+				background-color: #f9f9f9
+
 		&.hot
 			border-color: $blue
 			box-shadow: 0 0 15px white

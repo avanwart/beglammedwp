@@ -23,11 +23,6 @@ Template Name: Gift Cards
 								<h1 class="page-title"><?php the_title(); ?></h1>
 							</div>
 						</header>
-						<div class="row visible-xs visible-sm">
-							<div class="col-sm-12">
-								<?php footer_bucket_1(); ?>
-							</div>
-						</div>
 						<div class="row">
 							<div class="col-sm-12">
 								<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">

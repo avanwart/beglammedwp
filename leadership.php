@@ -30,7 +30,7 @@ Template Name: Leadership
 									<h1><?php the_title(); ?></h1>
 								</div>
 							</header>
-							<div class="row visible-xs visible-sm">
+							<div class="row visible-xs">
 								<div class="col-sm-12">
 									<?php footer_bucket_1(); ?>
 								</div>

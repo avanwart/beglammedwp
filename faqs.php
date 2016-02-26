@@ -52,7 +52,7 @@ Template Name: FAQs
 		</div>
 			<div class="row">
 				<div class="col-sm-12">
-					<p class="text-center">Can't find the answer to your question? <a href="<?php bloginfo('url'); ?>/contact">Contact us &raquo;</a></p>
+					<p class="text-center">Can't find the answer to your question? <br class="visible-xs"/><a href="<?php bloginfo('url'); ?>/contact">Contact us &raquo;</a></p>
 				</div>
 			</div>
 	</div>

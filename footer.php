@@ -30,6 +30,7 @@
 							<h3>For Stylists</h3>
 							<?php footer_bucket_4(); ?>
 
+							<h3>Community</h3>
 							<ul class="social-media">
 								<li class="facebook"><a href="https://www.facebook.com/beglammednow/" target="_blank"></a></li>
 								<li class="twitter"><a href="https://twitter.com/beglammednow" target="_blank"></a></li>

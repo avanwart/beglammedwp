@@ -1,4 +1,8 @@
 @media screen and (max-width: 767px)
+	body
+		p
+			font-size: 14px
+
 	header
 		.navbar
 			.navbar-header
@@ -29,7 +33,7 @@
 					text-transform: uppercase
 			.navbar-collapse
 				.navbar-nav
-					margin-top: 10px
+					margin: 10px 0 0 0
 					&.utility
 						position: relative
 						right: auto
@@ -47,42 +51,55 @@
 						width: 50%
 						text-align: center
 						&.phone
-							// clear: both
-							// float: none
-							// width: 100%
-							// margin-bottom: 10px
-						&:last-child
-							padding-right: 12px
-							a
-								color: $blue
+							clear: both
+							float: none
+							width: 100%
+							margin-bottom: 10px
 						a
 							padding: 12px
 							font-size: 15px
 							line-height: 1.2
 							color: $black
 	body.home.page
-		.hero
-			padding: 3em 0
-			background: white url('../images/hero-bg-mobile3.jpg') center center no-repeat
-			background-size: cover
-			height: 420px
-			h1 
-				margin: 1em 0 0 0
-				font-size: 35px
-				color: white
+		section
+			padding: 1.5em 0
+			.container
+				padding-left: 15px!important
+				padding-right: 15px!important
 			h2
-				font-size: 18px
-				color: white
+				font-family: 'montserratregular', sans-serif
+				font-weight: normal
+				font-size: 28px
+		.hero
+			padding: 3em 0 0
+			background: white url('../images/hero-bg-mobile.jpg') center center no-repeat!important
+			background-size: cover!important
+			min-height: 480px
+			height: auto
+			h1 
+				margin: 40px 0 0 0
+				font-size: 35px
+			h2
+				font-size: 16px
 				margin-bottom: 2em
+			form
+				margin: 0
 			.form-group
+				max-width: 100%
+				width: 100%
+				.input-group
+					box-shadow: none
 				select, input, .input-group-btn
 					width: 100%
 					border-radius: 4px
+					display: block
 				select
-					border: none
+					border: 1px solid #dadada
 					margin-bottom: 10px
 				.btn-primary
-					border-radius: 4px					
+					border-radius: 4px
+					width: 100%
+					margin-bottom: 2em
 		.logos
 			.logo
 				width: 50%
@@ -91,49 +108,9 @@
 				&.bottom
 					margin-top: 15px
 		.features
-			.tabbable
-				margin: 0
-			.nav-tabs
-				list-style-type: disc
-				border: none
-				border-bottom: 1px solid #efefef
-				margin-bottom: 15px
-				li
-					display: block
-					list-style-type: disc
-					margin-bottom: 10px
-					width: 50%
-					a
-						background: transparent
-						text-align: center
-						color: $blue
-						border: none
-						padding: 0
-					&.active
-						a
-							background: transparent
-							font-weight: bold
-							border: none
-							color: $blue
-					&:last-child
-						width: 100%
-			.tab-content
-				.tab-pane
-					padding: 0px
-					background: transparent
-					border: none
-					h3
-						font-size: 18px
-						text-align: left
-						margin-bottom: 10px
-						font-weight: normal
-						line-height: 1.3
-					.btn-lg
-						width: 100%
-						display: block
-						margin-bottom: 10px
-					.btn-default
-						border: 1px solid #dadada
+			.col-sm-4
+				margin-bottom: 80px
+			
 		.pricing 
 			.card
 				background: none
@@ -174,6 +151,13 @@
 				padding-bottom: 20px
 				border-bottom: 1px solid rgba(0, 0, 0, .05)
 				margin-bottom: 20px
+		.app
+			h2
+				margin-bottom: 10px
+			label 
+				font-size: 12px
+				display: block
+				text-align: center
 		.faq
 			h1
 				font-size: 22px
@@ -183,22 +167,40 @@
 				border: 1px solid #ccc
 			.panel-group .panel .panel-heading .panel-title a .glyphicon
 				margin-right: 4px
-	.footer
+	.footer.dark
 		span.hidden-xs
+			display: none!important
+		.brand
 			display: none!important
 		.bucket
 			text-align: center
-			padding-bottom: 20px
-			border-bottom: 1px solid rgba(0, 0, 0, .15)
-			margin-bottom: 20px
-			box-shadow: 0 1px 0 rgba(255, 255, 255, .05)
+			&:last-child
+				border: none
+				box-shadow: none
 			&.badges
 				border: none
 				box-shadow: none
 				margin: 0
 				img
 					margin-top: 0!important
+			ul
+				margin-bottom: 60px!important
+			ul.social-media
+				display: block
+				text-align: center
+				li
+					margin: 0 15px!important
+	body.page-id-1060
+		section
+			.container
+				.card
+					header
+						.overlay
+							h1
+								font-size: 28px!important
 	body.page, body.single
+		.wrapper > section
+			padding-top: 0
 		.modal
 			.modal-dialog
 				width: 100%
@@ -210,10 +212,30 @@
 						p
 							font-size: 15px
 		section
+			padding: 1.5em 0 0
 			overflow-x: hidden
+			&:last-child
+				padding-bottom: 0
+			#frm_field_121_container
+				display: none
+				
+			.tab-pane
+				p
+					font-size: 14px
+			ul
+				li
+					font-size: 14px
 			.container
+				padding-left: 0
+				padding-right: 0
 				.card
 					margin-bottom: 0
+					.text-center
+						hr
+							margin: 20px 0
+					h2
+						font-size: 24px
+						margin-bottom: 20px
 					article, .inner
 						padding: 20px 15px
 					header
@@ -223,24 +245,50 @@
 							h1
 								line-height: 150px
 								font-size: 36px
-					ul.footer-bucket
-						background: #efefef
-						overflow: auto
-						padding: 10px 0
-						li
-							float: left
-							width: 50%
-							text-align: center
-							a
-								padding: 8px 0
-								display: block
-							&:last-child
-								display: none
+				ul.footer-bucket
+					background: $pink
+					overflow: auto
+					padding: 10px 0
+					li
+						float: left
+						width: 50%
+						text-align: center
+						a
+							padding: 8px 0
+							display: block
+							color: $black
+						&.about-us, &.services
+							display: none
 			&.about
 				.card
 					border: none
+				&.services
+					h2
+						text-decoration: underline
+					article
+						margin-bottom: 0px
+					hr
+						visibility: hidden
+					.time_price
+						display: inline
 				&.single
-					background: red
+					h1
+						font-size: 24px
+						font-family: 'montserratregular'
+						font-weight: normal
+			&.careers
+				.panel-group
+					.panel
+						.panel-heading, .panel-body
+							padding-left: 0
+							padding-right: 0
+				.nav-tabs
+					li
+						a
+							font-size: 13px
+				.tab-content
+					.tab-pane
+						padding: 20px
 			&.leadership
 				.card
 					header
@@ -254,12 +302,17 @@
 						&:last-child
 							margin-bottom: 0
 					h2
-						font-size: 28px
+						font-size: 22px
+						small
+							font-size: 15px
 			&.testimonials
 				.card
 					article
 						blockquote
 							padding: 0
+							font-size: 14px
+							span
+								margin: -50px 0 0 -10px
 			&.faq
 				padding: 30px 0
 				.container
@@ -302,6 +355,7 @@
 				padding: 0 15px
 			.hero
 				padding: 50px 0
+						
 				h1
 					font-size: 28px
 					margin-bottom: 30px
@@ -379,11 +433,14 @@
 							.form-control, label, input[type="submit"]
 								max-width: 290px
 
+
 	.gift-cards
 		form
 			fieldset
 				margin-bottom: 30px
 			.form-group
+				max-width: 100%!important
+				width: 100%!important
 				&.price
 					.col-sm-2
 						width: 20%
@@ -403,5 +460,155 @@
 						padding-left: 15px
 					&:last-child
 						padding-right: 15px
+
+	.weddings
+		.container
+			padding-left: 15px!important
+			padding-right: 15px!important
+		&.hero
+			min-height: 150px
+			height: 150px
+			.overlay
+				height: 150px
+				h1
+					line-height: 150px
+					font-size: 36px
+					margin: 0
+		&.benefits
+			padding-top: 1.5em!important
+			p
+				margin-bottom: 40px
+		&.look
+			h2
+				font-size: 24px
+				margin-bottom: 20px
+				font-family: 'montserratregular'
+			.bucket
+				padding: 0
+				margin-bottom: 0
+			.btn-primary
+				margin-top: 30px
+		&.variety
+			h2
+				font-size: 24px
+				margin-bottom: 20px
+				font-family: 'montserratregular'
+			.bucket
+				img
+					height: auto
+					margin: 0
+					width: 100%
+					max-width: 100%
+		&.services
+			h2
+				font-size: 24px
+				margin-bottom: 20px
+				font-family: 'montserratregular'
+			.bucket
+				min-height: 100px
+		&.faq
+			h2
+				font-size: 24px
+				margin-bottom: 20px
+				font-family: 'montserratregular'
+
+	.groups
+		&.share
+			padding-top: 1.5em!important
+		.container
+			padding-left: 15px!important
+			padding-right: 15px!important
+		&.hero
+			min-height: 150px
+			height: 150px
+			.overlay
+				height: 150px
+				h1
+					line-height: 150px
+					font-size: 36px
+					margin: 0
+			&.form
+				min-height: 150px
+				overflow: hidden
+				height: auto
+				h2
+					font-size: 22px
+				.intro
+					font-size: 16px
+				.form-group
+					select, input, .input-group-btn
+						width: 100%
+						border-radius: 4px
+					select
+						border: 1px solid #dadada
+						margin-bottom: 10px
+					.btn-primary
+						border-radius: 4px
+		&.features
+			.nav-tabs li
+				width: 50%
+			.tab-content
+				.tab-pane
+					padding: 15px
+					.btn-primary
+						margin-bottom: 20px
+	
+	.locations
+		.container
+			padding: 0 10px!important
+		h3
+			font-size: 17px
+			text-align: center
+		ul.cities
+			display: block
+			width: 100%
+			margin-bottom: 0
+			li
+				text-align: center
+				font-size: 18px
+
+	.explore
+		padding-top: 1em
+		.container
+			padding-left: 10px!important
+			padding-right: 10px!important
+		.col-xs-6
+			padding: 0 10px
+		.card
+			height: 360px
+			padding-bottom: 0
+			margin-bottom: 20px!important
+			img
+				&:hover
+					opacity: 1
+			h2
+				font-size: 12px!important
+				margin-bottom: 10px!important
+			p 
+				font-size: 12px!important
+			.btn-default
+				display: block
+				width: 100%
+				text-align: center
+				text-decoration: none
+				color: $red
+				border-radius: 4px
+				background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6)
+				background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6))
+				background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6)
+				background-image: -o-linear-gradient(top, #ffffff, #e6e6e6)
+				background-image: linear-gradient(to bottom, #ffffff, #e6e6e6)
+				background-repeat: repeat-x
+				border: 1px solid #cccccc
+				border-color: #e6e6e6 #e6e6e6 #bfbfbf
+				border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25)
+				border-bottom-color: #b3b3b3
+				font-size: 13px
+				padding: 8px
+		.filters
+			.btn
+				font-size: 12px
+				margin: 5px 5px 0 0
+				padding: 6px 10px
 
 

@@ -31,7 +31,7 @@ Template Name: Services
 								</div>
 							</header>
 
-							<div class="row visible-xs visible-sm">
+							<div class="row visible-xs">
 								<div class="col-sm-12">
 									<?php footer_bucket_2(); ?>
 								</div>
@@ -52,8 +52,8 @@ Template Name: Services
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'row clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 								<div class="col-sm-12 col-md-10 col-md-offset-1">
 									<h3><?php the_sub_field('service_name'); ?></h3>
-									<p><?php the_sub_field('service_description'); ?><br/><?php the_sub_field('service_duration'); ?>, <?php the_sub_field('service_starting_price'); ?></p>
-									<a href="#" class="btn btn-primary">Book Now</a>
+									<p><?php the_sub_field('service_description'); ?> <br class="hidden-xs"/><span class="time_price"><?php the_sub_field('service_duration'); ?>, <?php the_sub_field('service_starting_price'); ?></span></p>
+									<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=P" class="btn btn-primary">Book Now</a>
 								</div>
 							</article> <!-- end article -->
 
@@ -76,8 +76,8 @@ Template Name: Services
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'row clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 								<div class="col-sm-12 col-md-10 col-md-offset-1 ">
 									<h3><?php the_sub_field('service_name'); ?></h3>
-									<p><?php the_sub_field('service_description'); ?><br/><?php the_sub_field('service_duration'); ?>, <?php the_sub_field('service_starting_price'); ?></p>
-									<a href="#" class="btn btn-primary">Book Now</a>
+									<p><?php the_sub_field('service_description'); ?> <br class="hidden-xs"/><span class="time_price"><?php the_sub_field('service_duration'); ?>, <?php the_sub_field('service_starting_price'); ?></span></p>
+									<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=P" class="btn btn-primary">Book Now</a>
 								</div>
 							</article> <!-- end article -->
 
@@ -99,8 +99,8 @@ Template Name: Services
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'row clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 								<div class="col-sm-12 col-md-10 col-md-offset-1 ">
 									<h3><?php the_sub_field('service_name'); ?></h3>
-									<p><?php the_sub_field('service_description'); ?><br/><?php the_sub_field('service_duration'); ?>, <?php the_sub_field('service_starting_price'); ?></p>
-									<a href="#" class="btn btn-primary">Book Now</a>
+									<p><?php the_sub_field('service_description'); ?> <br class="hidden-xs"/><span class="time_price"><?php the_sub_field('service_duration'); ?>, <?php the_sub_field('service_starting_price'); ?></span></p>
+									<a href="https://appointment.beglammed.com/beta/schedulenew/default.aspx?type=P" class="btn btn-primary">Book Now</a>
 								</div>
 							</article> <!-- end article -->
 

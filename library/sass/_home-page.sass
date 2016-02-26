@@ -1,4 +1,4 @@
-body.home
+body.home, body.page-template-home-page-v2
 	background: white
 	section
 		padding: 4em 0
@@ -13,8 +13,8 @@ body.home
 		
 
 	.hero
-		min-height: 420px
-		background: url('../images/hero-bg-light.jpg') 100% 0% no-repeat
+		min-height: 480px
+		background: url('../images/hero-bg-light.jpg') 50% 0% no-repeat
 		background-size: cover
 		padding-bottom: 0
 		h1
@@ -27,33 +27,22 @@ body.home
 			line-height: 1.5
 			font-size: 22px
 			margin: 0 0 4em
-		.input-group
-			border-radius: 4px
-			box-shadow: 0 3px 5px rgba(0, 0, 0, .1)
-			margin-bottom: 40px
-			width: 100%
-			select:first-child
-				border-radius: 4px 0 0 4px
-		.form-group
-			input, select
-				border-right: 0
-				height: 50px
-			input, select, .input-group-btn
-				float: left
-				width: 25%
-				margin: 0
-				button
-					height: 50px
-					font-size: 14px
+		.form-control
+			&.special
+				border: 1px solid #aaa
+				border-right: none
+			&.datepicker
+				border-radius: 0
+		form
+			margin-left: 60px
 
 
 
 
 	.logos
-		background: white
 		padding: 1.5em 0
-		border-top: 1px solid #efefef
-		border-bottom: 1px solid #efefef
+		border-top: 1px solid darken($darkPink, 5%)
+		border-bottom: 1px solid darken($darkPink, 5%)
 		img
 			display: block
 			vertical-align: middle
@@ -87,7 +76,7 @@ body.home
 			width: auto
 			display: inline-block
 			border-radius: 100px
-			border: 1px solid #dadada
+			border: 1px solid darken($pink, 8%)
 			margin: 0 0 20px
 		h2
 			margin-bottom: 40px
@@ -132,11 +121,14 @@ body.home
 			margin-top: 20px
 
 	.app
+		padding: 3em 0 2em
 		h2
-			font-size: 24px
+			margin: 1em 0 20px
+			font-size: 30px
+			line-height: 1.75
 		.phone
 			margin-top: 0px
-			height: 360px
+			height: 320px
 			width: auto
 		form
 			margin-bottom: 20px

@@ -18,12 +18,12 @@
 
 <script>
 	jQuery(document).ready(function($){
-		$(window).scroll(function() {
+		/*$(window).scroll(function() {
 			if ($(window).scrollTop() >= 80) {
 				$('#sidebar').addClass('affix');
 			} else {
 				$('#sidebar').removeClass('affix');
 			}
-		});
+		});*/
 	});
 </script>

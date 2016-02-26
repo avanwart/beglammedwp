@@ -17,6 +17,7 @@
 				margin-bottom: 10px
 			a
 				font-size: 14px
+
 		&.badges
 			img
 				display: inline-block
@@ -31,10 +32,39 @@
 			ul
 				list-style-type: none
 				padding: 0
-				margin: 0
+				margin: 0 0 30px
 			a
 				color: white
 				text-shadow: 0 1px 0 rgba(0, 0, 0, .1)
+			ul.social-media
+				list-style-type: none
+				margin: 0 0 50px
+				display: inline-block
+				li
+					float: left
+					margin: 0 10px
+					&.facebook
+						a
+							background-image: url('../images/facebook-icon.png')
+					&.twitter
+						a
+							background-image: url('../images/twitter-icon.png')
+					&.pinterest
+						a
+							background-image: url('../images/pinterest-icon.png')
+					&.instagram
+						a
+							background-image: url('../images/instagram-icon.png')
+					a
+						display: block
+						width: 24px
+						height: 24px
+						background-size: 24px 24px
+						background-repeat: no-repeat
+						background-position: center center
+						background-color: transparent
+						&:hover
+							opacity: .8
 	.outter-footer
 		background: $darkRed
 		.col-sm-12
@@ -55,3 +85,4 @@
 		a
 			color: white
 			text-decoration: none
+

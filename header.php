@@ -95,9 +95,24 @@
 									} ?>
 
 									<ul class="nav navbar-nav utility hidden-xs">
-										<li><a href="#login">Log In</a></li>
+										<li id="login"><a href="https://appointment.beglammed.com/schedule/login.aspx">Log In</a></li>
 										<li><a href="tel:301-362-6190"><i class="glyphicon glyphicon-earphone"></i>1-844-595-6773</a></li>
 									</ul>
+
+									<!-- Logged In vs. Logged Out Functionality -->
+									<script>
+
+										if (document.cookie.indexOf("bg_user") >= 0) {
+											console.log('logged in');
+											jQuery('#login a').text('My Account').attr('href', 'https://appointment.beglammed.com/schedule/account.aspx')
+										}
+										else {
+											console.log('logged out');
+										  
+										}
+
+									
+									</script>
 
 								</div>
 							</div>
